@@ -1,0 +1,13 @@
+test_id;trip_type;from;to;from2;to2;from_nearby_airports;to_nearby_airports;depart;depart2;return;cabin_class;adults;children;non_stop_flights_only
+Test-01;Multi-city;New York (Any);Zurich (ZRH);Zurich (ZRH);Tokyo (Any);;;01/04/2019;09/04/2019;;Economy;1;4;
+Test-02;Roundtrip;Madrid (MAD);Seoul (Any);;;true;true;01/04/2019;;05/05/2019;Business class;1;2;true
+Test-03;One-way;Madrid (MAD);Zurich (ZRH);;;true;;01/04/2019;;;Economy;2;2;
+Test-04;Multi-city;New York (Any);Seoul (Any);Seoul (Any);Paris Orly (ORY);;;01/04/2019;09/04/2019;;Business class;2;4;
+Test-05;Roundtrip;New York (Any);Zurich (ZRH);;;;true;01/04/2019;;05/05/2019;Economy;2;4;true
+Test-06;Multi-city;Madrid (MAD);Seoul (Any);Seoul (Any);Tokyo (Any);;;01/04/2019;09/04/2019;;Business class;2;2;
+Test-07;Roundtrip;New York (Any);Seoul (Any);;;;;01/04/2019;;05/05/2019;Economy;1;2;
+Test-08;Multi-city;Madrid (MAD);Seoul (Any);Seoul (Any);Paris Orly (ORY);;;01/04/2019;09/04/2019;;Economy;1;4;
+Test-09;One-way;New York (Any);Zurich (ZRH);;;true;true;01/04/2019;;;Business class;1;2;
+Test-10;Multi-city;Madrid (MAD);Zurich (ZRH);Zurich (ZRH);Paris Orly (ORY);;;01/04/2019;09/04/2019;;Business class;2;2;
+Test-11;One-way;New York (Any);Seoul (Any);;;;;01/04/2019;;;Business class;1;4;true
+Test-12;One-way;Madrid (MAD);Seoul (Any);;;true;true;01/04/2019;;;Economy;1;4;

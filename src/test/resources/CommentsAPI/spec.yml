@@ -1,0 +1,56 @@
+# https://www.imdb.com/search/title/
+features:
+-  id: GetAllComments
+   description: Search comments
+   parameters:
+   -  name: contains
+      description: Filter comments including the given string
+      type: string
+      required: false
+   -  name: type
+      description: Comment type
+      type: string
+      enum:
+      - Review
+      - Request
+      - Complain
+      - All
+      default: All
+      required: false
+   -  name: order
+      description: Ordering parameter.
+      type: string
+      enum:
+      - date
+      - +date
+      - -date
+      required: false
+   -  name: offset
+      description: The index of the first result to return.
+      type: integer
+      required: false
+   -  name: limit
+      description: Maximum number of results to return.
+      type: integer
+      required: false
+      
+ 
+      
+# MT configuration
+   configuration:
+      ordering_parameters:
+      - order
+      conjunctive_filters:
+      - contains
+      - type
+      disjoint_filters:
+      -  parameter: type
+         values:
+         - Review
+         - Request
+         - Complain
+      complete_filters:
+      -  parameter: type
+         all_value: All
+      limit_parameter: limit
+      offset_parameter: offset

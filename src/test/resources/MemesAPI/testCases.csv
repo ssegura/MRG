@@ -1,0 +1,10 @@
+test_id;reverse;upperlimit;lowerlimit;category
+Test-01;false;11;;
+Test-02;;11;4;All
+Test-03;;;;
+Test-04;;;4;Sport
+Test-05;false;;4;All
+Test-06;true;11;;Sport
+Test-07;true;;4;
+Test-08;true;11;;All
+Test-09;false;;4;Sport

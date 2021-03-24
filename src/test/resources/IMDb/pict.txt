@@ -1,0 +1,34 @@
+# Parameters
+title, The Godfather, Los irrompibles, 
+title_type, Feature Film, 
+release_date_start, 1980-01-01,
+release_date_end, 1995-12-31,
+user_rating_min, 5.5,
+user_rating_max, 10,
+number_votes_min, 100,
+number_votes_max, 1000,
+genres, Action, Crime,
+title_groups, IMDb Top 250, Oscar-Nominated,
+title_data, Awards, Quotes,
+companies, Sony, Warner Bros.,
+instant_watch_options, US Prime Video (Rent or Buy), UK Prime Video ($0.00 with Membership),
+US_certificates, G, PG-13,
+color_info, Color, Black and white,
+countries, Argentina, United States,
+keyword, west,
+languages, English, Spanish,
+filming_locations, United States,
+popularity_min, 1,
+popularity_max, 10,
+plot, killing,
+cast_crew, Richard Curtis, John Travolta,
+runtime_min, 100,
+runtime_max, 200,
+sound_mix, Dolby Digital, DTS,
+your_ratings, Exclude Titles I've Seen, Restrict to Titles I've Seen
+in_theaters, Show All Titles, Only Show Titles Currently Playing Near Me
+adult_titles, Exclude, Include
+display_options_format, Detailed, Compact
+display_options_page_size, 50 per page
+sorted_by, Popularity Descending, Release Date Descending
+

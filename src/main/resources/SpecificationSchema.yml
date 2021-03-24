@@ -1,0 +1,36 @@
+features:
+-  id: featureID
+   description: Operation under test
+   parameters:
+   -  name: name
+      description: Description
+      type: type
+      enum:
+      - value1
+      - value2
+      - valuen
+      default: defaultValue
+      required: false
+   constraints:
+   -  contraint: constraint
+   
+   configuration:
+      ordering_parameters:
+      - param1
+      - param2
+      conjunctive_filters:
+      - param1
+      - param2
+      disjunctive_filters:
+      - param1
+      - param2
+      disjoint_filters:
+      -  parameter: param1
+         values:
+         - value1
+         - value2
+      complete_filters:
+      -  parameter: param1
+         all_value: null
+      limit_parameter: param
+      offset_parameter: param

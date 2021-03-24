@@ -1,0 +1,108 @@
+# http://demo.prestashop.com/#/en/back
+features:
+-  id: ListOrders
+   description: List orders (Prestashop backoffice 1.7.6.0)
+   parameters:
+   -  name: id
+      description: Order identifier
+      type: integer
+      required: false
+   -  name: reference
+      description: Order reference (automatically generated string)
+      type: String
+      required: false
+   -  name: new_client
+      description: String indicating whether the order has been placed by a new client
+      type: string
+      enum:
+      - yes
+      - no
+      required: false   
+   -  name: delivery
+      description: Delivery destination (e.g. United States)
+      type: String
+      required: false
+   -  name: customer
+      description: Customer's name
+      type: String
+      required: false
+   -  name: total
+      description: Order total
+      type: real
+      required: false
+   -  name: payment
+      description: Payment method
+      type: String
+      required: false
+   -  name: status
+      description: Order status
+      type: string
+      enum:
+      - Awaiting bank wire payment
+      - Awaiting Cash On Delivery validation
+      - Awaiting check payment
+      - Canceled
+      - Delivered
+      - On backorder (not paid)
+      - On backorder (paid)
+      - Payment accepted
+      - Payment error
+      - Processing in progress
+      - Refunded
+      - Remote payment accepted
+      - Shipped
+      required: false
+   -  name: from
+      description: Date from which orders should be listed
+      type: date
+      required: false
+   -  name: to
+      description: Date to which orders should be listed
+      type: date
+      required: false
+   -  name: order
+      description: Synthetic parameter to represent the ordering criteria specifiy in the UI with arrows.
+      type: string
+      enum:
+      - id ascending
+      - id descending
+      - reference ascending
+      - reference descending
+      - delivery ascending
+      - delivery descending
+      - customer ascending
+      - customer descending
+      - total ascending
+      - total descending
+      - payment ascending
+      - payment descending
+      - status ascending
+      - status descending
+      - date ascending
+      - date descending
+      default: id descending
+      required: false     
+      
+   # No constraints
+   
+   configuration:
+      ordering_parameters:
+      - order
+      conjunctive_filters:
+      - id
+      - reference
+      - new_client
+      - delivery
+      - customer
+      - total
+      - status
+      - from
+      - to
+      disjoint_filters:
+      - parameter: new_client
+      - parameter: status
+      complete_filters:
+      -  parameter: new_client
+         all_value: empty
+      -  parameter: status
+         all_value: empty

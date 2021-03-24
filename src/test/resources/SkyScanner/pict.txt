@@ -1,0 +1,36 @@
+# Parameters
+trip_type, Roundtrip, One-way, Multi-city
+from, New York (Any), Madrid (MAD)
+to, Zurich (ZRH), Seoul (Any)
+from2, Zurich (ZRH), Seoul (Any),
+to2, Paris Orly (ORY), Tokyo (Any),
+from_nearby_airports, true,
+to_nearby_airports, true,
+depart, 01/04/19
+depart2, 09/04/2019,
+return, 05/05/2019,
+cabin_class, Economy, Business class
+adults, 1,2
+children, 2,4
+non_stop_flights_only, true,
+
+# Constraints
+if [trip_type] = "Roundtrip"   then [return] <> "";
+if [trip_type] = "Roundtrip"   then [from2] = "";
+if [trip_type] = "Roundtrip"   then [to2] = "";
+if [trip_type] = "Roundtrip"   then [depart2] = "";
+
+if [trip_type] = "One-way"   then [return] = "";
+if [trip_type] = "One-way"   then [from2] = "";
+if [trip_type] = "One-way"   then [to2] = "";
+if [trip_type] = "One-way"   then [depart2] = "";
+
+if [trip_type] = "Multi-city"   then [return] = "";
+if [trip_type] = "Multi-city"   then [from2] <> "";
+if [trip_type] = "Multi-city"   then [to2] <> "";
+if [trip_type] = "Multi-city"   then [depart2] <> "";
+if [trip_type] = "Multi-city" then [from_nearby_airports] = "";
+if [trip_type] = "Multi-city" then [to_nearby_airports] = "";
+if [trip_type] = "Multi-city" then [non_stop_flights_only] = "";
+
+if [from2] <> "" then [from2] = [to];

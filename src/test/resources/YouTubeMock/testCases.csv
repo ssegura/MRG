@@ -1,0 +1,11 @@
+test_id;channelId;channelType;eventType;forContentOwner;forDeveloper;forMine;location;locationRadius;maxResults;onBehalfOfContentOwner;order;pageToken;part;publishedAfter;publishedBefore;q;regionCode;relatedToVideoId;relevanceLanguage;safeSearch;topicId;type;videoCaption;videoCategoryId;videoDefinition;videoDimension;videoDuration;videoEmbeddable;videoLicense;videoSyndicated;videoType
+Test-01;;;upcoming;;;;44.3559,-11.7161;875ft;;;;;snippet;2013-10-30T12:51:17Z;;impiously;US;;;none;/m/06ntj;video;;;standard;2d;short;any;;;movie
+Test-02;UCRpjHHu8ivVWs73uxHlWwFA;;live;;FALSE;;;;;;relevance;;snippet;;;;;;FR;strict;;video;any;19;standard;;long;;youtube;any;movie
+Test-03;;;completed;;FALSE;;;;;;rating;;snippet;2013-04-04T10:23:12Z;2016-10-12T16:49:20Z;therein;;;IT;moderate;;video;;2;;2d;;;;TRUE;any
+Test-04;;;;;;;37.38283,-5.97317;684km;;;;;snippet;2014-01-14T20:09:16Z;2018-09-11T22:44:41Z;;DE;;;;/m/0f2f9;video;any;;high;any;any;;creativeCommon;any;
+Test-05;;;;;FALSE;;44.3559,-11.7161;821ft;;;;;snippet;2014-03-10T10:55:03Z;2019-11-06T09:42:43Z;;;;;;;video;none;;high;2d;;;;;movie
+Test-06;;;;;;;;;;;rating;;snippet;;;;;;;;;;;;;;;;;;
+Test-07;UC2b0o80VP4cbfPE_v8LQEOA;;;;TRUE;;;;;;rating;;snippet;;;;PT;;PT;;;;;;;;;;;;
+Test-08;;;completed;;;;44.3559,-11.7161;307km;;;;;snippet;;;;;;;moderate;;video;;;high;3d;;;youtube;;movie
+Test-09;;;;;;;;;;;;;snippet;;;;;WId93QmyzW4;;none;;video;;;;;;;;;
+Test-10;;;upcoming;;FALSE;;44.3559,-11.7161;184km;;;date;;snippet;;;;DE;;IT;;/m/07bxq;video;any;35;;;;;;TRUE;movie

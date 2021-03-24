@@ -1,0 +1,320 @@
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR23 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [reverse, lowerlimit, category]
+and a follow-up test case is constructed by adding the following parameters [upperlimit]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR7 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [upperlimit, lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category]
+and a follow-up test case is constructed by removing the following parameters [upperlimit]
+and a follow-up test case is constructed by removing the following parameters [lowerlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR38 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [reverse:true, lowerlimit]
+and a follow-up test case is constructed by changing the value of the following parameters [reverse:false]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR0 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [reverse, upperlimit]
+and a follow-up test case is constructed by removing the following parameters [upperlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR37 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [reverse, lowerlimit]
+and a follow-up test case is constructed by removing the following parameters [reverse]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR6 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [upperlimit, lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category]
+and a follow-up test case is constructed by removing the following parameters [lowerlimit, upperlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR16 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category, lowerlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR18 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [lowerlimit, category]
+and a follow-up test case is constructed by adding the following parameters [reverse:true]
+and a follow-up test case is constructed by changing the value of the following parameters [reverse:false]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR32 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [reverse, upperlimit, category:Sport]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Food]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Social]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR29 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [reverse, upperlimit, category]
+and a follow-up test case is constructed by adding the following parameters [lowerlimit]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR20 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [lowerlimit, category]
+and a follow-up test case is constructed by adding the following parameters [reverse:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR1 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [reverse, upperlimit]
+and a follow-up test case is constructed by adding the following parameters [category, lowerlimit]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR36 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [reverse, lowerlimit]
+and a follow-up test case is constructed by adding the following parameters [category, upperlimit]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR26 (COMPLETE_EXTEND):
+if a source test case is run with the inputs [reverse, lowerlimit, category:All]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Sport]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Food]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Social]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Undefined]
+then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR13 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs []
+and a follow-up test case is constructed by adding the following parameters [reverse:true]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR21 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [reverse, lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category, lowerlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR22 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [reverse, lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [lowerlimit]
+and a follow-up test case is constructed by removing the following parameters [category]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR9 (COMPLETE_EXTEND):
+if a source test case is run with the inputs [upperlimit, lowerlimit, category:All]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Sport]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Food]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Social]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Undefined]
+then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR35 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [reverse, lowerlimit]
+and a follow-up test case is constructed by adding the following parameters [upperlimit]
+and a follow-up test case is constructed by adding the following parameters [category]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR11 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs []
+and a follow-up test case is constructed by adding the following parameters [category, lowerlimit, upperlimit]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR3 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [reverse, upperlimit]
+and a follow-up test case is constructed by removing the following parameters [reverse]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR33 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [reverse, lowerlimit]
+and a follow-up test case is constructed by removing the following parameters [lowerlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR27 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [reverse, upperlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category]
+and a follow-up test case is constructed by removing the following parameters [upperlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR19 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [lowerlimit, category:Sport]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Food]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Social]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR28 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [reverse, upperlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category, upperlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR39 (COMPLETE_EXTEND):
+if a source test case is run with the inputs [reverse, upperlimit, category:All]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Sport]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Food]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Social]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Undefined]
+then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR2 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [reverse, upperlimit]
+and a follow-up test case is constructed by adding the following parameters [lowerlimit]
+and a follow-up test case is constructed by adding the following parameters [category]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR24 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [reverse, lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [reverse]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR8 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [upperlimit, lowerlimit, category]
+and a follow-up test case is constructed by adding the following parameters [reverse:true]
+and a follow-up test case is constructed by changing the value of the following parameters [reverse:false]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR25 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [reverse:false, lowerlimit, category]
+and a follow-up test case is constructed by changing the value of the following parameters [reverse:true]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR31 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [reverse:true, upperlimit, category]
+and a follow-up test case is constructed by changing the value of the following parameters [reverse:false]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR34 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [reverse, lowerlimit]
+and a follow-up test case is constructed by adding the following parameters [category]
+and a follow-up test case is constructed by adding the following parameters [upperlimit]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR14 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs []
+and a follow-up test case is constructed by adding the following parameters [reverse:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR30 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [reverse, upperlimit, category]
+and a follow-up test case is constructed by removing the following parameters [reverse]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR5 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [upperlimit, lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category, lowerlimit, upperlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR17 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [lowerlimit, category]
+and a follow-up test case is constructed by adding the following parameters [upperlimit]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR15 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category]
+and a follow-up test case is constructed by removing the following parameters [lowerlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR12 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs []
+and a follow-up test case is constructed by adding the following parameters [category, upperlimit]
+and a follow-up test case is constructed by adding the following parameters [lowerlimit]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR40 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [reverse, lowerlimit, category]
+and a follow-up test case is constructed by removing the following parameters [category]
+and a follow-up test case is constructed by removing the following parameters [lowerlimit]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR10 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [upperlimit, lowerlimit, category]
+and a follow-up test case is constructed by adding the following parameters [reverse:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR41 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [reverse, lowerlimit, category:Sport]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Food]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Social]
+and a follow-up test case is constructed by changing the value of the following parameters [category:Undefined]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of MemesAPI (GetAllMemes)
+the following metamorphic relation should hold
+MR4 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [reverse:false, upperlimit]
+and a follow-up test case is constructed by changing the value of the following parameters [reverse:true]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+

@@ -1,0 +1,99 @@
+# https://www.skyscanner.com/
+features:
+-  id: searchFlights
+   description: Flight search
+   parameters:
+   -  name: trip_type
+      description: trip type 
+      type: string
+      enum:
+      - Roundtrip
+      - One-way
+      - Multi-city
+      default: Roundtrip
+      required: true
+   -  name: from
+      description: Origin airport
+      type: string
+      required: true
+   -  name: to
+      description: Destination aiport
+      type: string
+      required: true  
+   -  name: from2
+      description: Second origin airport in multi-city trips.
+      type: string
+      required: false
+   -  name: to2
+      description: Second destination airport in multi-city trips.
+      type: string
+      required: false
+   -  name: from_nearby_airports
+      description: Search also nearby airports in the origin
+      type: boolean
+      required: false
+   -  name: to_nearby_airports
+      description: Search also nearby airports in the destination
+      type: boolean
+      required: false
+   -  name: depart
+      description: Departure date
+      type: date
+      required: true
+   -  name: depart2
+      description: Second departure date in multi-city trips
+      type: date
+      required: false
+   -  name: return
+      description: Return date
+      type: date
+      required: false
+   -  name: cabin_class
+      description: Cabin class
+      type: string
+      enum:
+      - Economy
+      - Premium economy
+      - Business class
+      - First class
+      default: Economy
+      required: true
+   -  name: adults
+      description: Adult travelers
+      type: integer
+      default: 1
+      required: true
+   -  name: children
+      description: Child travelers
+      type: integer
+      default: 0
+      required: true
+   -  name: non_stop_flights_only
+      description: Search direct flights only
+      type: boolean
+      required: false
+      
+   constraints:
+   - constraint: trip_type = Roundtrip requires return
+   - constraint: trip_type = Roundtrip excludes from2
+   - constraint: trip_type = Roundtrip excludes to2
+   - constraint: trip_type = Roundtrip excludes depart2
+   - constraint: trip_type = One-way excludes return
+   - constraint: trip_type = One-way excludes from2
+   - constraint: trip_type = One-way excludes to2
+   - constraint: trip_type = One-way excludes depart2
+   - constraint: trip_type = Multi-city excludes return
+   - constraint: trip_type = Multi-city requires from2
+   - constraint: trip_type = Multi-city requires to2
+   - constraint: trip_type = Multi-city requires depart2
+   - constraint: trip_type = Multi-city excludes from_nearby_airports
+   - constraint: trip_type = Multi-city excludes to_nearby_airports
+   - constraint: trip_type = Multi-city excludes non_stop_flights_only
+   
+   
+   configuration:
+      disjunctive_filters:
+      - from_nearby_airports
+      - to_nearby_airports
+      conjunctive_filters:
+      - non_stop_flights_only

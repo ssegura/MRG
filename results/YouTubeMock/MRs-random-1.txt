@@ -1,0 +1,360 @@
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR10 (COMPLETE_EXTEND):
+if a source test case is run with the inputs [channelId, eventType, forDeveloper, order, part, relevanceLanguage, safeSearch, type, videoCaption:any, videoCategoryId, videoDefinition, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR11 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [channelId, eventType, forDeveloper, order, part, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDimension:any, videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR15 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [eventType, forDeveloper, order:rating, part, publishedAfter, publishedBefore, q, relevanceLanguage, safeSearch, type, videoCategoryId, videoDimension, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [order:date]
+and a follow-up test case is constructed by changing the value of the following parameters [order:relevance]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR8 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [channelId, eventType, forDeveloper, order:relevance, part, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [order:date]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR37 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, safeSearch, type, videoDefinition, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelId, forDeveloper, publishedAfter, relevanceLanguage, videoEmbeddable]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR24 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [forDeveloper, location, locationRadius, part, publishedAfter, publishedBefore, type, videoCaption, videoDefinition, videoDimension, videoType]
+and a follow-up test case is constructed by removing the following parameters [publishedAfter, videoCaption, videoType]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR7 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [channelId, eventType, forDeveloper, order, part, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by removing the following parameters [order]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR32 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [channelId, forDeveloper, order, part, regionCode, relevanceLanguage]
+and a follow-up test case is constructed by removing the following parameters [channelId, forDeveloper, relevanceLanguage]
+and a follow-up test case is constructed by removing the following parameters [regionCode]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR9 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [channelId, eventType, forDeveloper, order, part, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration:long, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR1 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, publishedAfter, q, regionCode, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper, videoSyndicated]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR33 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [channelId, forDeveloper, order, part, regionCode, relevanceLanguage]
+and a follow-up test case is constructed by removing the following parameters [order]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR12 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [eventType, forDeveloper, order, part, publishedAfter, publishedBefore, q, relevanceLanguage, safeSearch, type, videoCategoryId, videoDimension, videoSyndicated, videoType]
+and a follow-up test case is constructed by removing the following parameters [publishedBefore, relevanceLanguage, safeSearch, videoDimension]
+and a follow-up test case is constructed by removing the following parameters [eventType, forDeveloper, publishedAfter, type, videoCategoryId, videoSyndicated, videoType]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR44 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [eventType, forDeveloper, location, locationRadius, order:date, part, regionCode, relevanceLanguage, topicId, type, videoCaption, videoCategoryId, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [order:rating]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR19 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [location, locationRadius, part, publishedAfter, publishedBefore, regionCode, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [safeSearch]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR46 (COMPLETE_EXTEND):
+if a source test case is run with the inputs [eventType, forDeveloper, location, locationRadius, order, part, regionCode, relevanceLanguage, topicId, type, videoCaption:any, videoCategoryId, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR23 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [location, locationRadius, part, publishedAfter, publishedBefore, regionCode, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR41 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [eventType, forDeveloper, location, locationRadius, order, part, regionCode, relevanceLanguage, topicId, type, videoCaption, videoCategoryId, videoSyndicated, videoType]
+and a follow-up test case is constructed by removing the following parameters [regionCode, relevanceLanguage, videoCaption, videoCategoryId, videoSyndicated]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR45 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [eventType, forDeveloper, location, locationRadius, order, part, regionCode, relevanceLanguage, topicId, type, videoCaption, videoCategoryId, videoSyndicated, videoType:movie]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:episode]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR30 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [order:rating, part]
+and a follow-up test case is constructed by changing the value of the following parameters [order:date]
+and a follow-up test case is constructed by changing the value of the following parameters [order:relevance]
+and a follow-up test case is constructed by changing the value of the following parameters [order:title]
+and a follow-up test case is constructed by changing the value of the following parameters [order:videoCount]
+and a follow-up test case is constructed by changing the value of the following parameters [order:viewCount]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR3 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, publishedAfter, q, regionCode, safeSearch, topicId, type, videoDefinition, videoDimension:2d, videoDuration, videoEmbeddable, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR42 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [eventType, forDeveloper, location, locationRadius, order, part, regionCode, relevanceLanguage, topicId, type, videoCaption, videoCategoryId, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [publishedAfter, publishedBefore, videoDefinition, videoDimension, videoDuration]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR35 (COMPLETE_EXTEND):
+if a source test case is run with the inputs [channelId, forDeveloper, order, part, regionCode, relevanceLanguage]
+and a follow-up test case is constructed by adding the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:playlist]
+then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR13 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [eventType, forDeveloper, order, part, publishedAfter, publishedBefore, q, relevanceLanguage, safeSearch, type, videoCategoryId, videoDimension, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [regionCode]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR25 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [forDeveloper, location, locationRadius, part, publishedAfter, publishedBefore, type, videoCaption, videoDefinition, videoDimension, videoType]
+and a follow-up test case is constructed by adding the following parameters [eventType, videoEmbeddable]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR5 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [channelId, eventType, forDeveloper, order, part, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by removing the following parameters [eventType]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR34 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [channelId, forDeveloper, order:rating, part, regionCode, relevanceLanguage]
+and a follow-up test case is constructed by changing the value of the following parameters [order:date]
+and a follow-up test case is constructed by changing the value of the following parameters [order:relevance]
+and a follow-up test case is constructed by changing the value of the following parameters [order:title]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR43 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [eventType, forDeveloper, location, locationRadius, order, part, regionCode, relevanceLanguage, topicId, type, videoCaption, videoCategoryId, videoSyndicated, videoType]
+and a follow-up test case is constructed by removing the following parameters [order]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR38 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, safeSearch, type, videoDefinition, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:date]
+and a follow-up test case is constructed by changing the value of the following parameters [order:rating]
+and a follow-up test case is constructed by changing the value of the following parameters [order:relevance]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR31 (COMPLETE_EXTEND):
+if a source test case is run with the inputs [order, part]
+and a follow-up test case is constructed by adding the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:playlist]
+then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR22 (COMPLETE_EXTEND):
+if a source test case is run with the inputs [location, locationRadius, part, publishedAfter, publishedBefore, regionCode, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration:any, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:short]
+then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR28 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [forDeveloper, location, locationRadius, part, publishedAfter, publishedBefore, type, videoCaption, videoDefinition, videoDimension, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDuration:any]
+and a follow-up test case is constructed by adding the following parameters [order:relevance, safeSearch:moderate, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR36 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, safeSearch, type, videoDefinition, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by removing the following parameters [safeSearch, videoDimension, videoType]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR47 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [eventType, forDeveloper, location, locationRadius, order, part, regionCode, relevanceLanguage, topicId, type, videoCaption, videoCategoryId, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR39 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, safeSearch, type, videoDefinition, videoDimension, videoLicense:youtube, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR0 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, publishedAfter, q, regionCode, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoType]
+and a follow-up test case is constructed by removing the following parameters [regionCode, videoDuration]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR2 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, publishedAfter, q, regionCode, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:date]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR14 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [eventType, forDeveloper, order, part, publishedAfter, publishedBefore, q, relevanceLanguage, safeSearch, type, videoCategoryId, videoDimension, videoSyndicated, videoType]
+and a follow-up test case is constructed by removing the following parameters [order]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR29 (SHUFFLING_CONTRACT):
+if a source test case is run with the inputs [order, part]
+and a follow-up test case is constructed by removing the following parameters [order]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR40 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [part, relatedToVideoId, safeSearch, type]
+and a follow-up test case is constructed by removing the following parameters [relatedToVideoId, safeSearch, type]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR27 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [forDeveloper, location, locationRadius, part, publishedAfter, publishedBefore, type, videoCaption, videoDefinition, videoDimension:2d, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR16 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [eventType:completed, forDeveloper, order, part, publishedAfter, publishedBefore, q, relevanceLanguage, safeSearch, type, videoCategoryId, videoDimension, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR20 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [location, locationRadius, part, publishedAfter, publishedBefore, regionCode, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [order:date]
+and a follow-up test case is constructed by changing the value of the following parameters [order:rating]
+and a follow-up test case is constructed by changing the value of the following parameters [order:relevance]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR18 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [location, locationRadius, part, publishedAfter, publishedBefore, regionCode, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by removing the following parameters [regionCode, topicId, videoCaption, videoDimension, videoSyndicated]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR4 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [eventType, location, locationRadius, part, publishedAfter, q, regionCode, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:relevance, videoCaption:any, videoLicense:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR6 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [channelId, eventType, forDeveloper, order, part, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [publishedBefore, videoDimension]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR26 (SHUFFLING_EXTEND):
+if a source test case is run with the inputs [forDeveloper, location, locationRadius, part, publishedAfter, publishedBefore, type, videoCaption, videoDefinition, videoDimension, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:date]
+and a follow-up test case is constructed by changing the value of the following parameters [order:rating]
+and a follow-up test case is constructed by changing the value of the following parameters [order:relevance]
+then the source and the follow-up output(s) should have the same items, regardless of their order.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR21 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [location, locationRadius, part, publishedAfter, publishedBefore, regionCode, topicId, type, videoCaption, videoDefinition:high, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:standard]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTubeMock (search)
+the following metamorphic relation should hold
+MR17 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [eventType, forDeveloper, order, part, publishedAfter, publishedBefore, q, relevanceLanguage, safeSearch, type, videoCategoryId, videoDimension, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoCaption:any, videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+

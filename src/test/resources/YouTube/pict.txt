@@ -1,0 +1,109 @@
+# Parameters
+part, snippet, statistics
+forContentOwner, true,
+forDeveloper, true,
+forMine, true, 
+relatedToVideoId, true,
+channelId, UC-9-kyTW8ZkZNDHQJ6FgpwQ,
+channelType, any, show,
+eventType, completed, live, upcoming,
+location, "37.42307,-122.08427","40.7128,74.0060",
+locationRadius, 5km, 3mi, 1000ft, 1000m,
+maxResults, 0, 50,
+onBehalfOfContentOwner, fakeContentOwnerId, 
+order, date, rating, relevance,
+pageToken, CAUQAA,
+publishedAfter, 1995-01-01T00:50:00Z,
+publishedBefore, 2010-01-01T12:00:00Z,
+q, winter, football,
+regionCode, gb, in,
+relevanceLanguage, eng, hin,
+safeSearch, moderate, none, strict,
+topicId, "/m/0gs0nr",
+type, channel, playlist,video,
+videoCaption, any, closedCaption, none,
+videoCategoryId, 10, 34,
+videoDefinition, any, high, standard,
+videoDimension, 2d, 3d, any,
+videoDuration, any, long, medium, short,
+videoEmbeddable, any, true,
+videoLicense, any, creativeCommon, youtube,
+videoSyndicated, any, true,
+videoType, any, episode, movie,
+
+
+# Constraints
+# Filters (specify 0 or 1 of the following parameters)
+if [forContentOwner] = "true"  then ([forDeveloper] <> "true" AND [forMine] <> "true" AND [relatedToVideoId] <> "true");
+if [forDeveloper] = "true"  then ([forContentOwner] <> "true" AND [forMine] <> "true" AND [relatedToVideoId] <> "true");
+if [forMine] = "true"  then ([forDeveloper] <> "true" AND [forContentOwner] <> "true" AND [relatedToVideoId] <> "true");
+if [relatedToVideoId] = "true"  then ([forDeveloper] <> "true" AND [forMine] <> "true" AND [forContentOwner] <> "true");
+
+# The onBehalfOfContentOwner parameter is required.
+# The type parameter value must be set to video.
+# None of the following other parameters can be set: videoDefinition, videoDimension, videoDuration, videoLicense, videoEmbeddable, videoSyndicated, videoType.
+if [forContentOwner] = "true" then [onBehalfOfContentOwner] <> "";
+if [forContentOwner] = "true" then [type] = "video";
+if [forContentOwner] = "true" then [videoDefinition] = "";
+if [forContentOwner] = "true" then [videoDimension] = "";
+if [forContentOwner] = "true" then [videoDuration] = "";
+if [forContentOwner] = "true" then [videoLicense] = "";
+if [forContentOwner] = "true" then [videoEmbeddable] = "";
+if [forContentOwner] = "true" then [videoSyndicated] = "";
+if [forContentOwner] = "true" then [videoType] = "";
+
+# If you set this parameter to true, then the type parameter's value must also be set to video. 
+# In addition, none of the following other parameters can be set in the same request: videoDefinition, videoDimension, videoDuration, videoLicense, videoEmbeddable, videoSyndicated, videoType.
+
+if [forMine] = "true" then [type] = "video";
+if [forMine] = "true" then [videoDefinition] = "";
+if [forMine] = "true" then [videoDimension] = "";
+if [forMine] = "true" then [videoDuration] = "";
+if [forMine] = "true" then [videoLicense] = "";
+if [forMine] = "true" then [videoEmbeddable] = "";
+if [forMine] = "true" then [videoSyndicated] = "";
+if [forMine] = "true" then [videoType] = "";
+
+# Note that if the relatedToVideoId parameter is set, the only other supported parameters are part, maxResults, pageToken, regionCode, relevanceLanguage, safeSearch, type (which must be set to video), and fields.
+
+if [relatedToVideoId] = "true" then [channelId] = "";
+if [relatedToVideoId] = "true" then [channelType] = "";
+if [relatedToVideoId] = "true" then [eventType] = "";
+if [relatedToVideoId] = "true" then [location] = "";
+if [relatedToVideoId] = "true" then [locationRadius] = "";
+if [relatedToVideoId] = "true" then [onBehalfOfContentOwner] = "";
+if [relatedToVideoId] = "true" then [order] = "";
+if [relatedToVideoId] = "true" then [publishedAfter] = "";
+if [relatedToVideoId] = "true" then [publishedBefore] = "";
+if [relatedToVideoId] = "true" then [q] = "";
+if [relatedToVideoId] = "true" then [topicId] = "";
+if [relatedToVideoId] = "true" then [videoCaption] = "";
+if [relatedToVideoId] = "true" then [videoCategoryId] = "";
+if [relatedToVideoId] = "true" then [videoDefinition] = "";
+if [relatedToVideoId] = "true" then [videoDimension] = "";
+if [relatedToVideoId] = "true" then [videoDuration] = "";
+if [relatedToVideoId] = "true" then [videoEmbeddable] = "";
+if [relatedToVideoId] = "true" then [videoLicense] = "";
+if [relatedToVideoId] = "true" then [videoSyndicated] = "";
+if [relatedToVideoId] = "true" then [videoType] = "";
+if [relatedToVideoId] = "true" then [type] = "video";
+
+
+if [location] <> "" then [locationRadius] <> "";
+if [locationRadius] <> "" then [location] <> "";
+
+# If you specify a value for this parameter, you must also set the type parameter's value to video.
+if [eventType] <> "" then [type] = "video";
+
+if [videoCaption] <> "" then [type] = "video";
+if [videoCategoryId] <> "" then [type] = "video";
+if [videoDimension] <> "" then [type] = "video";
+if [videoDefinition] <> "" then [type] = "video";
+if [videoDuration] <> "" then [type] = "video";
+if [videoEmbeddable] <> "" then [type] = "video";
+if [videoLicense] <> "" then [type] = "video";
+if [videoSyndicated] <> "" then [type] = "video";
+if [videoType] <> "" then [type] = "video";
+
+
+

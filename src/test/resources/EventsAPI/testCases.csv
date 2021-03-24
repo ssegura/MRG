@@ -1,0 +1,44 @@
+test_id;name;creator;area;tag;day;date_minimum;type;order
+Test-01;Concert;3;37.4, -6, 100000;beach;5;;;creator+
+Test-02;Concert;;36.6, -6.2, 10000000;none;;2010-04-12;holidays;creator
+Test-03;;1;;;5000;2019-03-03;unspecified;creator
+Test-04;;2;38, -122, 99999;music;-1;2020-05-05;;date+
+Test-05;;1;38, -122, 99999;none;0;2017-04-09;all;creator+
+Test-06;Concert;2;;food;;;meeting;date-
+Test-07;Concert;3;37.4, -6, 100000;music;5000;2010-04-12;all;
+Test-08;;3;36.6, -6.2, 10000000;food;0;2019-03-03;;date
+Test-09;;;38, -122, 99999;beach;5000;2017-04-09;holidays;date
+Test-10;;2;37.4, -6, 100000;;5;2017-04-09;;creator
+Test-11;Concert;1;36.6, -6.2, 10000000;food;5;2020-05-05;unspecified;
+Test-12;;;37.4, -6, 100000;none;-1;2019-03-03;meeting;
+Test-13;Concert;;;music;0;;unspecified;date
+Test-14;;1;36.6, -6.2, 10000000;beach;0;2010-04-12;meeting;date+
+Test-15;Concert;3;37.4, -6, 100000;;0;2020-05-05;holidays;date-
+Test-16;Concert;3;38, -122, 99999;;;;all;date+
+Test-17;Concert;3;;food;-1;2017-04-09;holidays;date+
+Test-18;;2;;none;5000;2010-04-12;;date-
+Test-19;;1;38, -122, 99999;beach;-1;2010-04-12;unspecified;date-
+Test-20;;1;37.4, -6, 100000;music;;2019-03-03;unspecified;creator+
+Test-21;;2;36.6, -6.2, 10000000;food;-1;;all;creator
+Test-22;Concert;;;beach;5;2019-03-03;all;date-
+Test-23;;3;36.6, -6.2, 10000000;music;5;2017-04-09;meeting;creator-
+Test-24;;;;none;5000;2020-05-05;unspecified;date+
+Test-25;;;38, -122, 99999;food;5;2010-04-12;holidays;creator+
+Test-26;;;37.4, -6, 100000;;;2020-05-05;meeting;date
+Test-27;;2;;beach;;2017-04-09;;
+Test-28;;1;38, -122, 99999;;0;;holidays;
+Test-29;Concert;2;37.4, -6, 100000;food;5000;2019-03-03;holidays;creator-
+Test-30;;1;;none;5;2010-04-12;all;date
+Test-31;;2;36.6, -6.2, 10000000;;5000;2020-05-05;meeting;creator+
+Test-32;;2;;;;2010-04-12;unspecified;creator-
+Test-33;;1;;;-1;2019-03-03;;creator+
+Test-34;;2;36.6, -6.2, 10000000;music;0;2017-04-09;holidays;date-
+Test-35;;3;37.4, -6, 100000;none;5;2019-03-03;unspecified;date+
+Test-36;;3;38, -122, 99999;music;0;2020-05-05;meeting;creator
+Test-37;;1;38, -122, 99999;none;-1;;all;creator-
+Test-38;;;;beach;;2020-05-05;;creator
+Test-39;;;;beach;0;2017-04-09;unspecified;creator-
+Test-40;;2;;none;;2020-05-05;;creator-
+Test-41;;2;;;-1;2020-05-05;all;date
+Test-42;;;36.6, -6.2, 10000000;;5000;;;creator-
+Test-43;;;38, -122, 99999;none;5000;2019-03-03;;date

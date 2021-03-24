@@ -1,0 +1,34 @@
+Number of tries: 216
+Number of MRs: 83
+Number of duplicated MRs (discarded): 133
+83 MRs identified
+
+Number of executions: 10
+Average generation time: 78.1
+
+Average number of MRs: 75.3
+Average number of follow-up test cases: 2.0593011187376002
+Minimum number of follow-up test cases: 1
+Maximum number of follow-up test cases: 6
+Average number of ConjunctiveContract MRs: 25.9
+Average number of ConjunctiveExtend MRs: 25.9
+Average number of DisjunctiveContract MRs: 0.0
+Average number of DisjunctiveExtend MRs: 0.0
+Average number of DisjointExtend MRs: 11.0
+Average number of CompleteExtend MRs: 6.0
+Average number of ShufflingContract MRs: 0.0
+Average number of ShufflingExtend MRs: 0.0
+Average number of EquivalenceExtend MRs: 6.5
+Seed: -4738438887845397211
+
+Number of parameters: 8
+Number of mandatory parameters: 0
+Number of optional parameters: 8
+Number of parameters with default values: 2
+Number of ordering parameters: 0
+Number of conjunctive filters: 4
+Number of disjunctive filters: 0
+Number of disjoint filters: 1
+Number of complete filters: 1
+Requires constraints: 1
+Excludes constraints: 0

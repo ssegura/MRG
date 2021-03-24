@@ -1,0 +1,13 @@
+# Parameters
+id, 1,5, 
+reference, KHWLILZLL, OHSATSERP, 
+new_client, yes, no, 
+delivery, United States, Spain, 
+customer, John Doe, Sergio Segura, 
+total, 20, 150, 
+payment, bank wire, payment by check, 
+status, canceled, refunded, delivered, 
+from, 01/01/2019, 
+to, 15/03/2019, 
+order, id descending, delivery ascending
+
