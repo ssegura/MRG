@@ -50,7 +50,7 @@ public class GlobalMRPrioritisationTest {
 		int distance = GlobalMRPrioritisation.calculateGlobaldistance(mrs.get(0),mrs.get(12));
 		System.out.println(mrs.get(0).printSimpleFormat());
 		System.out.println(mrs.get(12).printSimpleFormat());
-		assertEquals("Wrong distance",4, distance);
+		assertEquals("Wrong distance",14, distance);
 	}
 
 }

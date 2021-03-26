@@ -55,8 +55,8 @@ public class main {
 	static int searchStrengh = 1;				// For each MRP, this factor determines the number of MR generation tries (searchStrength * number of relevant parameters)
 	static int maxMRsPerTestCase = -1;			// Maximum number of MRs of each type generated for each source test case.
 	static int maxFutcs = 6;					// Maximum number of follow-up test cases
-	static int numExecutions = 10;
-	static long seed = -1;
+	static int numExecutions = 1;
+	static long seed = 1;
 	
 	public static void main(String[] args) {
 		
@@ -141,11 +141,15 @@ public class main {
 				Collections.shuffle((List)mrs,generator.getRandom());
 				
 				// Write MRs to CSV
-				//System.out.println("Writing MRs to CSV");
+				// System.out.println("Writing MRs to CSV");
 				MRWriter.writeMRsToCSV(outputDirPath + sutName + "/MRs-random-" + (i+1) + ".csv", (List<MetamorphicRelation>) mrs);
+
+				// Write MRs to extended CSV
+				// System.out.println("Writing MRs to extended CSV");
+				MRWriter.writeMRsToExtendedCSV(outputDirPath + sutName + "/MRs-random-extended-" + (i+1) + ".csv", (List<MetamorphicRelation>) mrs, maxFutcs);
 				
 				// Write MRs to Text
-				//System.out.println("Writing MRs to text");
+				// System.out.println("Writing MRs to text");
 				MRWriter.writeMRsToFile(outputDirPath + sutName +  "/MRs-random-"  + (i+1) + ".txt", (List<MetamorphicRelation>) mrs);
 				
 			}

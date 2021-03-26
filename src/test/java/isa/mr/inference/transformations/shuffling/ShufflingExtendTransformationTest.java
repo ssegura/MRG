@@ -23,7 +23,7 @@ public class ShufflingExtendTransformationTest {
 	
 	@BeforeClass
 	public static void setUp() throws Exception {
-		Specification spec = SUTSpecification.readSpecification("src/test/resources/Bikewise/spec.yml");
+		Specification spec = SUTSpecification.readSpecification("src/test/resources/Bikewise/spec-complete.yml");
 		sut = new SUT(spec,"GetIncidents");
 		
 		// TestCase

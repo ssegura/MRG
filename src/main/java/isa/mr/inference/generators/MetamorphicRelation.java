@@ -3,6 +3,7 @@ package isa.mr.inference.generators;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import isa.testcases.TestCase;
 import isa.testcases.TestParameter;
@@ -63,6 +64,34 @@ public class MetamorphicRelation {
 	public void addFollowUpTestCases(Collection<TestCase> testCases) {
 		this.followUpTestCases.addAll(testCases);
 	}
+
+	public Boolean containsSupersets(List<MetamorphicRelation> mrs){
+		// same type
+		// same domain
+		// same sourceTestCase parameters (source testcase id)
+		// A superset of follow up test cases (getFutcsAsStrings)
+
+		return mrs.stream()
+				.filter(x-> x.getType().equals(this.type)
+//						&& x.getDomain().equals(this.domain)
+						&& x.getSourceTestCase().getId().equals(this.sourceTestCase.getId()))
+
+				.anyMatch(x-> x.getFutcAsStrings().containsAll(this.getFutcAsStrings()));
+	}
+
+	public static void removeSubsets(List<MetamorphicRelation> mrs, MetamorphicRelation mr){
+		// Same type
+		// Same domain
+		// Same sourceTestCase parameters (source testcase id)
+		// A superset of follow up test cases (getFutcsAsStrings)
+		List<MetamorphicRelation> mrsToRemove = mrs.stream().filter(x-> x.getType().equals(mr.getType())
+//					&& x.getDomain().equals(mr.getDomain())
+					&& x.getSourceTestCase().getId().equals(mr.getSourceTestCase().getId())
+					&& mr.getFutcAsStrings().containsAll(x.getFutcAsStrings()))
+				.collect(Collectors.toList());
+
+		mrs.removeAll(mrsToRemove);
+	}
 	
 	
 	public String printSimpleFormat() {
@@ -94,6 +123,31 @@ public class MetamorphicRelation {
 		 		
 		return res;
 	}
+
+	private List<String> getFutcAsStrings(){
+
+		List<String> res = new ArrayList<>();
+
+		TestCase tc = sourceTestCase;
+		for(TestCase futc: followUpTestCases) {
+			Diff diff = TestCaseDiff.testCaseDiff(tc, futc);
+			if (!diff.getAddedParameters().isEmpty())
+				res.add(printParameters(diff.getAddedParameters()));
+
+			if (!diff.getRemovedParameters().isEmpty())
+				res.add(printParameterNames(diff.getRemovedParameters()));
+
+			if (!diff.getChangedParameters().isEmpty())
+				res.add(printParameters(diff.getChangedParameters()));
+
+			tc = futc;
+
+		}
+
+		return res;
+
+	}
+
 	
 	// Print MR in natural language (based on Segura et al's template, MET 2017)
 	private String printMR() {
@@ -167,7 +221,7 @@ public class MetamorphicRelation {
 	}
 
 	// Returns parameters' names
-	private String printParameterNames(List<TestParameter> params) {
+	public static String printParameterNames(List<TestParameter> params) {
 		String res="[";
 		
 		for(TestParameter param:params) {
@@ -182,7 +236,7 @@ public class MetamorphicRelation {
 	}
 
 	// Returns parameters' names and values (excluding those with undefined value: "<TBD>")
-	private String printParameters(Collection<TestParameter> params) {
+	public static String printParameters(Collection<TestParameter> params) {
 		String res="[";
 		
 		for(TestParameter param:params) {
@@ -200,7 +254,7 @@ public class MetamorphicRelation {
 	}
 	
 	// Returns source test parameters. Values are only specified when relevant for the MR (i.e. they are changed in the follow-up test case).
-	private String printSourceTestCaseParameters() {
+	public String printSourceTestCaseParameters() {
 		String res = "[";
 		
 		TestCase followUpTestCase = followUpTestCases.get(0);
@@ -227,7 +281,21 @@ public class MetamorphicRelation {
 	public boolean equals (Object o) {
 		MetamorphicRelation mr = (MetamorphicRelation) o;
 
-		return (this.printMR().equals(mr.printMR())); 
+		Boolean res = false;
+
+		// Same source test case and type
+		if(this.printSourceTestCaseParameters().equals(mr.printSourceTestCaseParameters()) && this.type.equals(mr.type)){
+			List<String> futcs = this.getFutcAsStrings();
+			List<String> futcsToCompare = mr.getFutcAsStrings();
+
+			// Same futcs (in different order)
+			if(futcs.size() == futcsToCompare.size() && futcs.containsAll(futcsToCompare)){
+				res = true;
+			}
+
+		}
+
+		return res;
 	}
 
 	public MetamorphicRelationType getType() {

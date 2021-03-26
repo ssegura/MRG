@@ -11,7 +11,7 @@ public class SUTSpecificationTest {
 	@Test
 	public void readSpecificationTest() {
 		Specification spec = SUTSpecification.readSpecification("src/test/resources/Bikewise/spec.yml");
-		assertEquals("Wrong number of parameters", 9, spec.getFeatures().get(0).getParameters().size());
+		assertEquals("Wrong number of parameters", 8, spec.getFeatures().get(0).getParameters().size());
 	}
 
 }

@@ -17,6 +17,8 @@ import isa.mr.inference.transformations.shuffling.ShufflingExtendTransformation;
 import isa.sut.SUT;
 import isa.testcases.TestCase;
 
+import static isa.mr.inference.generators.MetamorphicRelation.removeSubsets;
+
 /**
  * Random generation (i.e. inference) of MRs
  * 
@@ -68,9 +70,15 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateConjunctiveContractMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)){
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
+
 				}
 
 				numTries++;
@@ -86,9 +94,14 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateConjunctiveExtendMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)) {
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
 				}
 
 				numTries++;
@@ -104,9 +117,14 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateDisjunctiveContractMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)) {
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
 				}
 
 				numTries++;	
@@ -122,9 +140,14 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateDisjunctiveExtendMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)) {
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
 				}
 
 				numTries++;
@@ -140,9 +163,14 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateShufflingContractMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)) {
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
 				}
 
 				numTries++;	
@@ -158,9 +186,14 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateShufflingExtendMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)) {
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
 				}
 
 				numTries++;
@@ -176,9 +209,14 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateDisjointExtendMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)) {
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
 				}
 
 				numTries++;
@@ -194,9 +232,14 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateCompleteExtendMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)) {
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
 				}
 
 				numTries++;
@@ -213,9 +256,14 @@ public class RandomMRGenerator {
 				MetamorphicRelation mr = generateEquivalenceExtendMR(sut, stc);
 
 				if (mr != null && !mrs.contains(mr)) {
-					mr.setIdentifier("MR" + id++);
-					mrs.add(mr);
-					nMRs++;
+					// If mrs does not contain a superset of mr
+					if (!mr.containsSupersets(mrs)) {
+						// Remove subsets
+						removeSubsets(mrs, mr);
+						mr.setIdentifier("MR" + id++);
+						mrs.add(mr);
+						nMRs++;
+					}
 				}
 
 				numTries++;

@@ -13,12 +13,12 @@ public class SUTTest {
 
 	@Test
 	public void testSUTBikewise() {
-		Specification spec = SUTSpecification.readSpecification("src/test/resources/Bikewise/spec.yml");
+		Specification spec = SUTSpecification.readSpecification("src/test/resources/Bikewise/spec-complete.yml");
 		SUT sut = new SUT(spec,"GetIncidents");
 		assertEquals("Wrong number of parameters", 9, sut.getParameters().size());
 		assertEquals("Wrong number of mandatory parameters", 1, sut.getMandatoryParameters().size());
 		assertEquals("Wrong number of optional parameters", 8, sut.getOptionalParameters().size());
-		assertEquals("Wrong number of parameters with default values", 2, sut.getParametersWithDefaultValues().size());
+		assertEquals("Wrong number of parameters with default values", 3, sut.getParametersWithDefaultValues().size());
 		assertEquals("Wrong number of ordering parameters", 1, sut.getOrderingParameters().size());
 		assertEquals("Wrong number of conjunctive filters", 4, sut.getConjunctiveFilters().size());
 		assertEquals("Wrong number of disjunctive filters", 0, sut.getDisjunctiveFilters().size());
