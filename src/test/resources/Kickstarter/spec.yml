@@ -10,7 +10,7 @@ features:
       - name: location
         description: Filter projects by location
         type: string
-        required: true
+        required: false
       - name: sortBy
         description: Sort projects by different criteria
         type: string
@@ -19,10 +19,10 @@ features:
         - Magic
         - Popularity
         - Newest
-        - End Date
-        - Most Funded
-        - Most Backed
-        - Near Me
+        - EndDate
+        - MostFunded
+        - MostBacked
+        - NearMe
       - name: projectsWeLove
         description: "Show only projects labeled as 'Project We Love'"
         type: boolean
@@ -84,8 +84,8 @@ features:
       - name: category
         description: category of the project (only one category per project)  # disjoint, complete, conjunctive
         type: string
-        required: true
-       # default: "All categories"      # todo: consider removing this parameter
+        required: true                  # TODO: Consider changing this value (possible inconsistence with conjunction)
+       # default: "All categories"      # todo: consider removing this line
         enum:
            - "All categories"
            - "Art"
@@ -94,7 +94,7 @@ features:
            - "Dance"
            - "Design"
            - "Fashion"
-           - "Film & Video"
+           - "FilmAndVideo"
            - "Food"
            - "Games"
            - "Journalism"
@@ -334,12 +334,29 @@ features:
            - Musical
            - Plays
            - Spaces
+   constraints:
+     - constraint: sortBy = NearMe excludes location
+     - constraint: artSubcategory requires category=Art
+     - constraint: comicsSubcategory requires category=Comics
+     - constraint: craftsSubcategory requires category=Crafts
+     - constraint: danceSubcategory requires category=Dance
+     - constraint: designSubcategory requires category=Design
+     - constraint: fashionSubcategory requires category=Fashion
+     - constraint: filmAndVideoSubcategory requires category=FilmAndVideo
+     - constraint: foodSubcategory requires category=Food
+     - constraint: gamesSubcategory requires category=Games
+     - constraint: journalismSubcategory requires category=Journalism
+     - constraint: musicSubcategory requires category=Music
+     - constraint: photographySubcategory requires category=Photography
+     - constraint: publishingSubcategory requires category=Publishing
+     - constraint: technologySubcategory requires category=Technology
+     - constraint: theaterSubcategory requires category=Theater
    configuration:
       ordering_parameters:
          - sortBy
       conjunctive_filters:    # TODO: Remove required parameters? Example: all categories and location=Earth
         - searchQuery
-        - location            # TODO: Reconsider default value (Earth)
+        - location            # Required: false # TODO: Reconsider
         - projectsWeLove      # Required: true
         - savedProjects
         - following
@@ -349,7 +366,7 @@ features:
         - amountPledged
         - goal
         - raised
-        - category
+        - category            # TODO: Consider removal from conjunctive
         - artSubcategory
         - comicsSubcategory
         - craftsSubcategory
