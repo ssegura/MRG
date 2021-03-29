@@ -1,0 +1,406 @@
+# https://www.kickstarter.com/discover/advanced
+features:
+-  id: DiscoverProjects
+   description: Advanced project search
+   parameters:
+      - name: searchQuery
+        description: Search Query
+        type: string
+        required: false
+      - name: location
+        description: Filter projects by location
+        type: string
+        required: true
+      - name: sortBy
+        description: Sort projects by different criteria
+        type: string
+        required: true
+        enum:
+        - Magic
+        - Popularity
+        - Newest
+        - End Date
+        - Most Funded
+        - Most Backed
+        - Near Me
+      - name: projectsWeLove
+        description: "Show only projects labeled as 'Project We Love'"
+        type: boolean
+        required: true
+        default: false
+      - name: savedProjects      # Disjoint, conjunctive, complete, there is no default value (default: both)
+        description: Show only projects saved by the user
+        type: boolean
+        required: false
+      - name: following          # Disjoint, conjunctive, complete, there is no default value (default: both)
+        description: Show projects followed by the user
+        type: boolean
+        required: false          # Disjoint, conjunctive, complete, there is no default value (default: both)
+      - name: projectsIHaveBacked
+        description: Show only projects by the user
+        type: boolean
+        required: false
+      - name: recommendedForMe     # Same situation as in projectsWeLove, conjunctive
+        description: show only projects recommended for me
+        type: boolean
+        required: true
+        default: false
+      - name: filterProjects     # Default: all projects    # Complete? No, Disjoint? Yes
+        description: "Filter projects, if not specified, all projects are shown"
+        type: string
+        required: false
+        enum:
+        - liveProjects
+        - successfulProjects
+        - upcomingProjects
+      - name: amountPledged         # Conjunctive? Yes, Complete? It should, disjoint? It should,
+        description: "Filter by amount pledged"
+        type: string
+        required: false
+        enum:
+        - "<$1,000 pledged"
+        - "$1,000 to $10,000 pledged"
+        - "$10,000 to $100,000 pledged"
+        - "$100,000 to $1,000,000 pledged"
+        - ">$1,000,000 pledged"
+      - name: goal               # Conjunctive? Yes, complete? It should, disjoint? It should
+        description: "Filter by goal"
+        type: string
+        required: false
+        enum:
+        - "<$1,000 goal"
+        - "$1,000 to $10,000 goal"
+        - "$10,000 to $100,000 goal"
+        - "$100,000 to $1,000,000 goal"
+        - ">$1,000,000 goal"
+      - name: raised             # Complete, disjoint, conjunctive
+        description: "Filter by percentage raised"
+        type: string
+        required: false
+        enum:
+        - "<75% raised"
+        - "75% to 100% raised"
+        - ">100% raised"
+      - name: category
+        description: category of the project (only one category per project)  # disjoint, complete, conjunctive
+        type: string
+        required: true
+       # default: "All categories"      # todo: consider removing this parameter
+        enum:
+           - "All categories"
+           - "Art"
+           - "Comics"
+           - "Crafts"
+           - "Dance"
+           - "Design"
+           - "Fashion"
+           - "Film & Video"
+           - "Food"
+           - "Games"
+           - "Journalism"
+           - "Music"
+           - "Photography"
+           - "Publishing"
+           - "Technology"
+           - "Theater"
+      - name: artSubcategory     # Subcategories are optional parameters      # Disjoint and conjunctive
+        description: Art subcategory (This parameter is optional)
+        type: string
+        required: false # There is no default value
+        enum:
+           - "Ceramics"
+           - "Conceptual Art"
+           - "Digital Art"
+           - "Illustration"
+           - "Installations"
+           - "Mixed Media"
+           - "Painting"
+           - "Performance Art"
+           - "Public Art"
+           - "Sculpture"
+           - "Social Practice"
+           - "Textiles"
+           - "Video Art"
+      - name: comicsSubcategory
+        description: Comics subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - "Anthologies"
+           - "Comic Books"
+           - "Events"
+           - "Graphic Novels"
+           - "Webcomics"
+      - name: craftsSubcategory
+        description: Crafts subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - "Candles"
+           - "Crochet"
+           - "DIY"
+           - "Embroidery"
+           - "Glass"
+           - "Knitting"
+           - "Pottery"
+           - "Printing"
+           - "Quilts"
+           - "Stationery"
+           - "Taxidermy"
+           - "Weaving"
+           - "Woodworking"
+      - name: danceSubcategory
+        description: Dance subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - "Performance"
+           - "Residencies"
+           - "Spaces"
+           - "Workshops"
+      - name: designSubcategory
+        description: Design subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - "Architecture"
+           - "Civic Design"
+           - "Graphic Design"
+           - "Interactive Design"
+           - "Product Design"
+           - "Toys"
+           - "Typography"
+      - name: fashionSubcategory
+        description: Fashion subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - "Accessories"
+           - "Apparel"
+           - "Childrenswear"
+           - "Couture"
+           - "Footwear"
+           - "Jewelry"
+           - "Pet Fashion"
+           - "Ready-to-wear"
+      - name: filmAndVideoSubcategory
+        description: Film and video subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - "Action"
+           - "Animation"
+           - "Comedy"
+           - "Documentary"
+           - "Drama"
+           - "Experimental"
+           - "Family"
+           - "Fantasy"
+           - "Festivals"
+           - "Horror"
+           - "Movie Theaters"
+           - "Music Videos"
+           - "Narrative Film"
+           - "Romance"
+           - "Science Fiction"
+           - "Shorts"
+           - "Television"
+           - "Thrillers"
+           - "Webseries"
+      - name: foodSubcategory
+        description: Food subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - Bacon
+           - Community Gardens
+           - Cookbooks
+           - Drinks
+           - Events
+           - "Farmer's Markets"
+           - Farms
+           - Food Trucks
+           - Restaurants
+           - Small Batch
+           - Spaces
+           - Vegan
+      - name: gamesSubcategory
+        description: Games subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - Gaming Hardware
+           - Live Games
+           - Mobile Games
+           - Playing Cards
+           - Puzzles
+           - Tabletop Games
+           - Video Games
+      - name: journalismSubcategory
+        description: Journalism subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - Audio
+           - Photo
+           - Print
+           - Video
+           - Web
+      - name: musicSubcategory
+        description: Music subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - Blues
+           - Chiptune
+           - Classical Music
+           - Comedy
+           - "Country & Folk"
+           - Electronic Music
+           - Faith
+           - "Hip-Hop"
+           - Indie Rock
+           - Jazz
+           - Kids
+           - Latin
+           - Metal
+           - Pop
+           - Punk
+           - "R&B"
+           - Rock
+           - World Music
+      - name: photographySubcategory
+        description: Photography subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - Animals
+           - Fine Art
+           - Nature
+           - People
+           - Photobooks
+           - Places
+      - name: publishingSubcategory
+        description: Publishing subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - Academic
+           - Anthologies
+           - Art Books
+           - Calendars
+           - "Children's Books"
+           - Comedy
+           - Fiction
+           - Letterpress
+           - Literary Journals
+           - Literary Spaces
+           - Nonfiction
+           - Periodicals
+           - Poetry
+           - "Radio & Podcasts"
+           - Translations
+           - Young Adults
+           - Zines
+      - name: technologySubcategory
+        description: Technology subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - 3D Printing
+           - Apps
+           - Camera Equipment
+           - DIY Electronics
+           - Fabrication Tools
+           - Flight
+           - Gadgets
+           - Hardware
+           - Makerspaces
+           - Robots
+           - Software
+           - Sound
+           - Space Exploration
+           - Wearables
+           - Web
+      - name: theaterSubcategory
+        description: Theater subcategory (This parameter is optional)
+        type: string
+        required: false
+        enum:
+           - Comedy
+           - Experimental
+           - Festivals
+           - Immersive
+           - Musical
+           - Plays
+           - Spaces
+   configuration:
+      ordering_parameters:
+         - sortBy
+      conjunctive_filters:    # TODO: Remove required parameters? Example: all categories and location=Earth
+        - searchQuery
+        - location            # TODO: Reconsider default value (Earth)
+        - projectsWeLove      # Required: true
+        - savedProjects
+        - following
+        - projectsIHaveBacked
+        - recommendedForMe    # Required: true
+        - filterProjects
+        - amountPledged
+        - goal
+        - raised
+        - category
+        - artSubcategory
+        - comicsSubcategory
+        - craftsSubcategory
+        - danceSubcategory
+        - designSubcategory
+        - fashionSubcategory
+        - filmAndVideoSubcategory
+        - foodSubcategory
+        - gamesSubcategory
+        - journalismSubcategory
+        - musicSubcategory
+        - photographySubcategory
+        - publishingSubcategory
+        - technologySubcategory
+        - theaterSubcategory
+      complete_filters:
+        - parameter: category
+          all_value: "All categories"
+        - parameter: savedProjects
+          all_value: empty
+        - parameter: following
+          all_value: empty
+        - parameter: projectsIHaveBacked
+          all_value: empty
+        - parameter: amountPledged
+          all_value: empty
+        - parameter: goal
+          all_value: empty
+        - parameter: raised
+          all_value: empty
+      disjoint_filters:
+        - parameter: savedProjects
+        - parameter: following
+        - parameter: projectsIHaveBacked
+        - parameter: filterProjects
+        - parameter: amountPledged   # TODO: CHECK inconsistency
+        - parameter: goal            # TODO: CHECK inconsistency
+        - parameter: raised          # TODO: CHECK inconsistency
+        - parameter: category        # TODO: Difference of two
+        - parameter: artSubcategory
+        - parameter: comicsSubcategory
+        - parameter: craftsSubcategory
+        - parameter: danceSubcategory
+        - parameter: designSubcategory
+        - parameter: fashionSubcategory
+        - parameter: filmAndVideoSubcategory
+        - parameter: foodSubcategory
+        - parameter: gamesSubcategory
+        - parameter: journalismSubcategory
+        - parameter: musicSubcategory
+        - parameter: photographySubcategory
+        - parameter: publishingSubcategory
+        - parameter: technologySubcategory
+        - parameter: theaterSubcategory
