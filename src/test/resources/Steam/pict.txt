@@ -1,0 +1,15 @@
+# Parameters
+term: the, simulator,
+sortBy: relevance, lowestPrice,
+price: under40, free,
+specialOffers: showAll, showOnlySpecialOffers
+tag: indie, adventure,
+selectedTypes: games, downloableContent,
+numberOfPlayers: singleplayer, multiplayer,
+feature: playedWithSteamController, steamAchievements,
+vrSupport: vrOnly,
+headsets: valveIndex,
+input: gamepad,
+playArea: seated,
+os: windows,
+language: english,

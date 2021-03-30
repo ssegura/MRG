@@ -42,9 +42,13 @@ public class main {
 	//static String featureId = "search";
 
 	// Kickstarter
-	static String sutName = "Kickstarter";
-	static String featureId = "DiscoverProjects";
-	
+//	static String sutName = "Kickstarter";
+//	static String featureId = "DiscoverProjects";
+
+	// Steam
+	static String sutName = "Steam";
+	static String featureId = "SearchTheStore";
+
 	// CommentsAPI
 	//static String sutName = "CommentsAPI";
 	//static String featureId = "GetAllComments";

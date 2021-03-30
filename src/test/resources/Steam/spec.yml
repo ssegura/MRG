@@ -1,0 +1,217 @@
+# https://store.steampowered.com/search/
+features:
+-  id: SearchTheStore
+   description: Explore the Steam store
+   parameters:
+   -  name: term           # Conjunctive
+      description: Search term
+      type: string
+      required: false
+   - name: sortBy          # Shuffling, but certain values are conjunctive
+     description: Sort results by different criteria
+     type: string
+     required: false
+     enum:
+        - relevance
+        - releaseDate   # TODO: Conjunctive
+        - name
+        - lowestPrice
+        - highestPrice
+        - userReviews   # TODO: Conjunctive
+   - name: price               # Conjunctive, Complete
+     description: Filter the results by price
+     type: string
+     required: false
+     enum:
+        - under60
+        - under55
+        - under50
+        - under45
+        - under40
+        - under35
+        - under30
+        - under25
+        - under20
+        - under15
+        - under10
+        - under5
+        - free
+   - name: specialOffers      # Conjunctive
+     description: Show only special offers
+     type: string
+     required: true     # TODO: Reconsider
+     default: showAll
+     enum:
+        - showAll
+        - showOnlySpecialOffers
+   - name: tag             # Conjunctive (multiple tags per product)
+     description: Narrow by tag
+     type: string
+     required: false
+     enum:
+        - indie
+        - freeToPlay
+        - action
+        - casual
+        - adventure
+        - strategy
+        - simulation
+        - rpg
+        - massivelyMultiplayer
+        - singleplayer
+        - multiplayer
+        - 2d
+        - earlyAccess
+        - sports
+        - pvp
+        - shooter
+   - name: selectedTypes      # Conjunctive, disjoint, complete
+     description: Show selected types
+     type: string
+     required: false
+     enum:
+        - games
+        - software
+        - downloableContent
+        - demos
+        - soundtracks
+        - videos
+        - mods
+        - hardware
+        - includeBundles
+   - name: numberOfPlayers    # Conjunctive
+     description: Narrow by number of players
+     type: string
+     required: false
+     enum:
+        - singleplayer
+        - multiplayer
+        - pvp
+        - onlinePvp
+        - lanPvp
+        - sharedSplitScreenPvp
+        - coop
+        - onlineCoop
+        - lanCoop
+        - sharedSplitScreenCoop
+        - sharedSplitScreen
+        - crossPlatformMultiplayer
+   - name: feature   # Conjunctive
+     description: Narrow by feature
+     type: string
+     required: false
+     enum:
+        - playedWithSteamController
+        - additionalHighQualityAudio
+        - steamAchievements
+        - fullControllerSupport
+        - steamTradingCards
+        - captionsAvailable
+        - steamWorkshop
+        - steamVRCollectibles
+        - partialControllerSupport
+        - steamCloud
+        - valveAntiCheatEnabled
+        - includesSourceSDK
+        - remotePlayOnPhone
+        - remotePlayOnTablet
+        - remotePlayOnTV
+        - remotePlayTogether
+   - name: vrSupport          # Conjunctive
+     description: Narrow by VR support
+     type: string
+     required: false
+     enum:
+        - vrOnly
+        - vrSupported
+   - name: headsets
+     description: Narrow by headsets
+     type: string
+     required: false
+     enum:
+        - valveIndex
+        - htcVive
+        - oculusRift
+        - windowsMixedReality
+   - name: input
+     description: Filter by input
+     type: string
+     required: false
+     enum:
+       - trackedMotionControllers
+       - gamepad
+       - keyboardMouse
+   - name: playArea
+     description: Filter by play area
+     type: string
+     required: false
+     enum:
+        - seated
+        - standing
+        - roomScale
+   - name: os
+     description: Filter y Operating System
+     type: string
+     required: false
+     enum:
+        - windows
+        - macOsX
+        - steamOsLinux
+   - name: language
+     description: Filter by language
+     type: string
+     required: false
+     enum:
+        - english
+        - simplifiedChinese
+        - traditionalChinese
+        - japanese
+        - korean
+        - thai
+        - bulgarian
+        - czech
+        - danish
+        - german
+        - spanishSpain
+        - spanishLatinAmerica
+        - greek
+        - french
+        - italian
+        - hungarian
+        - dutch
+        - norwegian
+        - polish
+        - portuguese
+        - portugueseBrazil
+        - romanian
+        - russian
+        - finnish
+        - swedish
+        - turkish
+        - vietnamese
+        - ukrainian
+# MT configuration
+   configuration:
+      ordering_parameters:
+      - sortBy              # TODO: Two of the values are conjunctive
+      conjunctive_filters:
+      - term
+      - price
+      - specialOffers       # TODO: Required true, reconsider
+      - tag
+      - selectedTypes
+      - numberOfPlayers
+      - feature
+      - vrSupport
+      - headsets
+      - input
+      - playArea
+      - os
+      - language
+      disjoint_filters:
+      - parameter: selectedTypes
+      complete_filters:
+      - parameter: selectedTypes
+        all_value: empty
+      - parameter: price
+        all_value: empty

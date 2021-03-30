@@ -1,0 +1,4 @@
+- Two of the values of sortBy are not shuffling values
+- Reconsider if specialOffers should be required
+- Reconsider if specialOffers should be a conjunctive filter
+- Take into account that selecting multiple values of an enum may result in both conjunctive and disjunctive filters
