@@ -1,10 +1,16 @@
 TODOs:
     - Consider if location should be required (in order to be a conjunctive filter, earth is the equivalent to an "all" value)
+        - Earth is the default value for location, but it is not available if we search it
     - Inconsistencies in the parameters (disjoint and complete): amountPledged, goal, raised and category (possible bugs, in categories is especially worrying)
     - Consider if category should be required (in order to be a conjunctive filter, "All category" is the equivalent to an "all" value)
 
 
-
+Booleans:
+    - projectsWeLove
+    - savedProjects
+    - following
+    - projectsIHaveBacked
+    - recommendedForMe
 
 
 

@@ -3,15 +3,15 @@ features:
 -  id: DiscoverProjects
    description: Advanced project search
    parameters:
-      - name: searchQuery
+      - name: searchQuery           # conjunctive
         description: Search Query
         type: string
         required: false
-      - name: location
+      - name: location              # conjunctive
         description: Filter projects by location
         type: string
         required: false
-      - name: sortBy
+      - name: sortBy                # ordering
         description: Sort projects by different criteria
         type: string
         required: true
@@ -23,28 +23,43 @@ features:
         - MostFunded
         - MostBacked
         - NearMe
-      - name: projectsWeLove
+      - name: projectsWeLove        # conjunctive
         description: "Show only projects labeled as 'Project We Love'"
-        type: boolean
+        type: string
         required: true
-        default: false
+        default: showAllProjects
+        enum:
+          - showAllProjects
+          - showProjectsWeLove
       - name: savedProjects      # Disjoint, conjunctive, complete, there is no default value (default: both)
         description: Show only projects saved by the user
-        type: boolean
+        type: string
         required: false
+        enum:
+          - showProjectsIHaveSaved
+          - showProjectsIHaveNotSaved
       - name: following          # Disjoint, conjunctive, complete, there is no default value (default: both)
         description: Show projects followed by the user
-        type: boolean
-        required: false          # Disjoint, conjunctive, complete, there is no default value (default: both)
-      - name: projectsIHaveBacked
-        description: Show only projects by the user
-        type: boolean
+        type: string
         required: false
+        enum:
+          - showProjectsIFollow
+          - showProjectsIDoNotFollow
+      - name: projectsIHaveBacked # Disjoint, conjunctive, complete, there is no default value (default: both)
+        description: Show only projects by the user
+        type: string
+        required: false
+        enum:
+          - showProjectsIHaveBacked
+          - showProjectsIHaveNotBacked
       - name: recommendedForMe     # Same situation as in projectsWeLove, conjunctive
         description: show only projects recommended for me
-        type: boolean
+        type: string
         required: true
-        default: false
+        default: showAllProjects
+        enum:
+          - showAllProjects
+          - showProjectsRecommendedForMe
       - name: filterProjects     # Default: all projects    # Complete? No, Disjoint? Yes
         description: "Filter projects, if not specified, all projects are shown"
         type: string
@@ -53,7 +68,7 @@ features:
         - liveProjects
         - successfulProjects
         - upcomingProjects
-      - name: amountPledged         # Conjunctive? Yes, Complete? It should, disjoint? It should,
+      - name: amountPledged         # Conjunctive? Yes, Complete? It should, disjoint? It should
         description: "Filter by amount pledged"
         type: string
         required: false
@@ -357,11 +372,11 @@ features:
       conjunctive_filters:    # TODO: Remove required parameters? Example: all categories and location=Earth
         - searchQuery
         - location            # Required: false # TODO: Reconsider
-        - projectsWeLove      # Required: true
+        - projectsWeLove      # Required: true  # TODO: Reconsider
         - savedProjects
         - following
         - projectsIHaveBacked
-        - recommendedForMe    # Required: true
+        - recommendedForMe    # Required: true Same problem that with location, category and projects we love TODO: Reconsider
         - filterProjects
         - amountPledged
         - goal

@@ -1,0 +1,51 @@
+# Parameters
+# Include /d:; flag when using pict to change the values separator
+searchQuery: game; future;
+location: United States; United Kingdom;
+sortBy: Popularity; NearMe
+projectsWeLove: showProjectsWeLove
+savedProjects: showProjectsIHaveSaved;
+following: showProjectsIFollow;
+projectsIHaveBacked: showProjectsIHaveBacked;
+recommendedForMe: showProjectsRecommendedForMe
+filterProjects: liveProjects;
+amountPledged: <$1,000 pledged;
+goal: <$1,000 goal;
+raised: <75% raised;
+category: All categories; Art; Comics; Crafts; Dance; Design; Fashion; FilmAndVideo; Food; Games; Journalism; Music; Photography; Publishing; Technology; Theater
+artSubcategory: Ceramics;
+comicsSubcategory: Graphic Novels;
+craftsSubcategory: Candles;
+danceSubcategory: Performance;
+designSubcategory: Architecture;
+fashionSubcategory: Accessories;
+filmAndVideoSubcategory: Action;
+foodSubcategory: Bacon;
+gamesSubcategory: Mobile Games;
+journalismSubcategory: Video;
+musicSubcategory: Jazz;
+photographySubcategory: Nature;
+publishingSubcategory: Academic; Poetry;
+technologySubcategory: Hardware;
+theaterSubcategory: Musical;
+
+
+# Constraints
+if [sortBy] = "NearMe" then [location] = "";
+
+# Constraints related to the use of subcategories
+if [artSubcategory] <> "" then [category] = "Art";
+if [comicsSubcategory] <> "" then [category] = "Comics";
+if [craftsSubcategory] <> "" then [category] = "Crafts";
+if [danceSubcategory] <> "" then [category] = "Dance";
+if [designSubcategory] <> "" then [category] = "Design";
+if [fashionSubcategory] <> "" then [category] = "Fashion";
+if [filmAndVideoSubcategory] <> "" then [category] = "FilmAndVideo";
+if [foodSubcategory] <> "" then [category] = "Food";
+if [gamesSubcategory] <> "" then [category] = "Games";
+if [journalismSubcategory] <> "" then [category] = "Journalism";
+if [musicSubcategory] <> "" then [category] = "Music";
+if [photographySubcategory] <> "" then [category] = "Photography";
+if [publishingSubcategory] <> "" then [category] = "Publishing";
+if [technologySubcategory] <> "" then [category] = "Technology";
+if [theaterSubcategory] <> "" then [category] = "Theater";

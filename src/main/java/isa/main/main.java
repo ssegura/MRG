@@ -30,8 +30,8 @@ public class main {
 	//static String featureId = "ListOrders";
 	
 	// SkyScanner
-	static String sutName = "SkyScanner";
-	static String featureId = "searchFlights";
+//	static String sutName = "SkyScanner";
+//	static String featureId = "searchFlights";
 	
 	// YouTube Mock
 	//static String sutName = "Bikewise";
@@ -40,6 +40,10 @@ public class main {
 	// YouTube
 	//static String sutName = "YouTube";
 	//static String featureId = "search";
+
+	// Kickstarter
+	static String sutName = "Kickstarter";
+	static String featureId = "DiscoverProjects";
 	
 	// CommentsAPI
 	//static String sutName = "CommentsAPI";
