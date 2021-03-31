@@ -1,0 +1,22 @@
+
+# Parameters
+term
+country     # default, disjoint (due to the property country)
+media       # default, complete (default: all), conjunctive, disjoint (excepting all, music and musicVideo)
+entity      # default (=media, Not possible to specify), conjunctive, disjoint? (YES, excepting several default values and musicTrack), complete? (YES)
+attribute   # default (=all=¿not apply?, Difficult to specify), conjunctive, disjoint? (NO, a match can be in several attributes example: name: skyfall, description: skyfall), complete? (YES)
+callback
+limit       # limit, default, ####### IGNORE THIS --> conjunctive? (if lower than default), disjunctive? (if greater than default)
+lang        # default, NOTDISJOINT, NOT CONJUNCTIVE
+version     # default,
+explicit    # conjunctive, default, complete
+
+
+
+# Constraints
+
+############################
+What happens when combining both disjoint and default value?
+Complete with subcategories? Example: media and entity/attribute
+TODO: Check complete dependencies of entity and attribute, taking media into account
+Is the default value taken into account in the restrictions? Examples in the spec.yaml file (all case)
