@@ -20,3 +20,4 @@ What happens when combining both disjoint and default value?
 Complete with subcategories? Example: media and entity/attribute
 TODO: Check complete dependencies of entity and attribute, taking media into account
 Is the default value taken into account in the restrictions? Examples in the spec.yaml file (all case)
+Not conjunctive MRs generated

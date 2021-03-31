@@ -1,0 +1,32 @@
+# Parameters
+term: rules of nature, akira kurosawa
+country: JP, IT,
+media: podcast, music,
+entity: album, podcastAuthor,
+attribute: songTerm, titleTerm,
+callback: randomFunction,
+limit: 200,
+lang: ja_jp,
+version: 1,
+explicit: No, Yes,
+
+# Constraints
+# Constraints related to provided values
+
+# constraint: entity = album requires media = music OR media = all
+# TODO: add OR [media] = "" when required     "all" = "" (Default value)
+if [entity] = "album"  then ([media] = "music");
+
+
+# constraint: entity = podcastAuthor requires media = podcast
+if [entity] = "podcastAuthor"  then ([media] = "podcast");
+
+
+
+# constraint: attribute = songTerm requires media = music OR media = musicVideo OR media = all
+if [attribute] = "songTerm"  then ([media] = "music");
+
+
+
+# constraint: attribute = titleTerm requires media = podcast # TODO: OR media = audiobook OR media = all
+if [attribute] = "titleTerm"  then ([media] = "podcast");

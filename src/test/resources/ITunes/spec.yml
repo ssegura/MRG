@@ -433,7 +433,7 @@ features:
 
       - constraint: attribute = tvEpisodeTerm requires media = tvShow # TODO: OR media = all
       - constraint: attribute = tvSeasonTerm requires media = tvShow # TODO: OR media = all
-        
+
    # MT configuration
    configuration:
       conjunctive_filters:

@@ -1,0 +1,16 @@
+test_id;term;country;media;entity;attribute;callback;limit;lang;version;explicit
+Test-01;rules of nature;JP;podcast;;titleTerm;randomFunction;200;ja_jp;;No
+Test-02;akira kurosawa;;podcast;podcastAuthor;;;;;1;
+Test-03;akira kurosawa;;music;album;songTerm;randomFunction;200;;;Yes
+Test-04;rules of nature;JP;music;;songTerm;;;ja_jp;1;Yes
+Test-05;rules of nature;IT;podcast;podcastAuthor;;;200;ja_jp;;Yes
+Test-06;akira kurosawa;IT;podcast;;titleTerm;randomFunction;200;;1;
+Test-07;akira kurosawa;JP;;;;randomFunction;;ja_jp;;
+Test-08;rules of nature;IT;music;album;songTerm;;;;1;
+Test-09;akira kurosawa;;podcast;;titleTerm;;;;1;No
+Test-10;rules of nature;;;;;;200;;1;Yes
+Test-11;rules of nature;JP;music;album;songTerm;randomFunction;;ja_jp;1;No
+Test-12;rules of nature;JP;podcast;podcastAuthor;;randomFunction;;;;No
+Test-13;akira kurosawa;IT;music;album;;;;ja_jp;1;No
+Test-14;rules of nature;;podcast;podcastAuthor;titleTerm;randomFunction;;ja_jp;1;Yes
+Test-15;akira kurosawa;IT;;;;randomFunction;;;1;No
