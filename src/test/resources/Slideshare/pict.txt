@@ -1,0 +1,5 @@
+# Parameters:
+search: dejavu, vanitas
+uploadDate: last30Days, last365Days,
+fileTypes: presentations, documents,
+language: English, Spanish,

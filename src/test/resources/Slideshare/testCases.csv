@@ -1,0 +1,11 @@
+test_id;search;uploadDate;fileTypes;language
+Test-01;dejavu;last365Days;;English
+Test-02;dejavu;;presentations;Spanish
+Test-03;vanitas;;documents;English
+Test-04;vanitas;;;
+Test-05;dejavu;last30Days;documents;Spanish
+Test-06;vanitas;last30Days;;Spanish
+Test-07;vanitas;last30Days;presentations;English
+Test-08;dejavu;last30Days;documents;
+Test-09;vanitas;last365Days;presentations;
+Test-10;dejavu;last365Days;documents;Spanish

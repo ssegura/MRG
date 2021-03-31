@@ -49,9 +49,13 @@ public class main {
 //	static String sutName = "Steam";
 //	static String featureId = "SearchTheStore";
 
-	// iTunes
-	static String sutName = "ITunes";
-	static String featureId = "Search";
+//	// iTunes
+//	static String sutName = "ITunes";
+//	static String featureId = "Search";
+
+	// Slideshare
+	static String sutName = "Slideshare";
+	static String featureId = "Explore";
 
 	// CommentsAPI
 	//static String sutName = "CommentsAPI";
