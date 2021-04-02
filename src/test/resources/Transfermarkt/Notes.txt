@@ -6,6 +6,7 @@
 # TODO: TAke into account type= integer
 # TODO: Cannot specify disjoint and complete filters due to type=integer
 # TODO: - Use offset if possible?
+# TODO: Include default values to generate EQUIVALENCE_CONTRACT relations?
 placeOfBirth: conjunctive
 exactSearch: conjunctive     # optional, enum with a single value
 citizenship: conjunctive

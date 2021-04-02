@@ -1,75 +1,19 @@
-test_id;searchQuery;location;sortBy;projectsWeLove;savedProjects;following;projectsIHaveBacked;recommendedForMe;filterProjects;amountPledged;goal;raised;category;artSubcategory;comicsSubcategory;craftsSubcategory;danceSubcategory;designSubcategory;fashionSubcategory;filmAndVideoSubcategory;foodSubcategory;gamesSubcategory;journalismSubcategory;musicSubcategory;photographySubcategory;publishingSubcategory;technologySubcategory;theaterSubcategory
-Test-01;game;United States;Popularity;showAllProjects;;;showProjectsIHaveBacked;showAllProjects;liveProjects;;;<75% raised;Photography;;;;;;;;;;;;;;;
-Test-02;future;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;showProjectsIFollow;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;;FilmAndVideo;;;;;;;Action;;;;;;;;
-Test-03;;United Kingdom;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;;showProjectsRecommendedForMe;;;<$1,000 goal;<75% raised;FilmAndVideo;;;;;;;;;;;;;;;
-Test-04;;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;showProjectsIHaveBacked;showAllProjects;liveProjects;<$1,000 pledged;;;FilmAndVideo;;;;;;;Action;;;;;;;;
-Test-05;future;United States;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;;;showAllProjects;;<$1,000 pledged;;;All categories;;;;;;;;;;;;;;;
-Test-06;game;United States;Popularity;showAllProjects;;showProjectsIFollow;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;<$1,000 goal;<75% raised;Crafts;;;Candles;;;;;;;;;;;;
-Test-07;game;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;showProjectsIFollow;showProjectsIHaveNotBacked;showAllProjects;liveProjects;;;<75% raised;Design;;;;;Architecture;;;;;;;;;;
-Test-08;;;NearMe;showAllProjects;showProjectsIHaveSaved;;showProjectsIHaveBacked;showAllProjects;;;;;Crafts;;;Candles;;;;;;;;;;;;
-Test-09;future;;NearMe;showProjectsWeLove;;showProjectsIDoNotFollow;;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;;;Theater;;;;;;;;;;;;;;;Musical
-Test-10;;United Kingdom;Popularity;showProjectsWeLove;;;showProjectsIHaveNotBacked;showAllProjects;liveProjects;<$1,000 pledged;<$1,000 goal;;Art;Ceramics;;;;;;;;;;;;;;
-Test-11;future;United Kingdom;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;;;;;Music;;;;;;;;;;;Jazz;;;;
-Test-12;;United States;Popularity;showAllProjects;showProjectsIHaveSaved;showProjectsIFollow;showProjectsIHaveBacked;showAllProjects;;;<$1,000 goal;<75% raised;Theater;;;;;;;;;;;;;;;Musical
-Test-13;game;United States;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showAllProjects;;;<$1,000 goal;<75% raised;Journalism;;;;;;;;;;Video;;;;;
-Test-14;game;United Kingdom;Popularity;showAllProjects;showProjectsIHaveNotSaved;;;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;;Design;;;;;Architecture;;;;;;;;;;
-Test-15;future;United States;Popularity;showAllProjects;;showProjectsIDoNotFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;<75% raised;Design;;;;;Architecture;;;;;;;;;;
-Test-16;future;United Kingdom;Popularity;showAllProjects;showProjectsIHaveSaved;showProjectsIFollow;;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;<$1,000 goal;;Comics;;Graphic Novels;;;;;;;;;;;;;
-Test-17;future;United Kingdom;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;<$1,000 goal;<75% raised;Crafts;;;Candles;;;;;;;;;;;;
-Test-18;game;United States;Popularity;showAllProjects;;;;showProjectsRecommendedForMe;;;<$1,000 goal;<75% raised;FilmAndVideo;;;;;;;Action;;;;;;;;
-Test-19;;;Popularity;showAllProjects;showProjectsIHaveSaved;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showAllProjects;liveProjects;<$1,000 pledged;<$1,000 goal;;Fashion;;;;;;Accessories;;;;;;;;;
-Test-20;;;NearMe;showProjectsWeLove;;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showAllProjects;liveProjects;<$1,000 pledged;<$1,000 goal;<75% raised;Music;;;;;;;;;;;Jazz;;;;
-Test-21;future;;NearMe;showAllProjects;;showProjectsIFollow;;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;;;Journalism;;;;;;;;;;Video;;;;;
-Test-22;;United Kingdom;Popularity;showProjectsWeLove;;;showProjectsIHaveNotBacked;showAllProjects;;<$1,000 pledged;<$1,000 goal;;Technology;;;;;;;;;;;;;;Hardware;
-Test-23;;;NearMe;showAllProjects;showProjectsIHaveSaved;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;;Publishing;;;;;;;;;;;;;Poetry;;
-Test-24;future;;NearMe;showProjectsWeLove;;showProjectsIDoNotFollow;showProjectsIHaveBacked;showAllProjects;liveProjects;;;<75% raised;Games;;;;;;;;;Mobile Games;;;;;;
-Test-25;game;United States;Popularity;showProjectsWeLove;showProjectsIHaveSaved;;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;<$1,000 pledged;;<75% raised;Dance;;;;Performance;;;;;;;;;;;
-Test-26;game;United States;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;;showProjectsRecommendedForMe;;<$1,000 pledged;;<75% raised;Food;;;;;;;;Bacon;;;;;;;
-Test-27;game;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;;showProjectsIHaveNotBacked;showAllProjects;liveProjects;;;;Theater;;;;;;;;;;;;;;;Musical
-Test-28;;United Kingdom;Popularity;showProjectsWeLove;showProjectsIHaveSaved;;showProjectsIHaveNotBacked;showAllProjects;liveProjects;;<$1,000 goal;;Food;;;;;;;;Bacon;;;;;;;
-Test-29;;United Kingdom;Popularity;showAllProjects;;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;;<$1,000 goal;<75% raised;All categories;;;;;;;;;;;;;;;
-Test-30;future;United Kingdom;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;;;showAllProjects;liveProjects;;;<75% raised;Publishing;;;;;;;;;;;;;Academic;;
-Test-31;game;United States;Popularity;showProjectsWeLove;;showProjectsIFollow;showProjectsIHaveBacked;showAllProjects;liveProjects;;;<75% raised;Publishing;;;;;;;;;;;;;Poetry;;
-Test-32;game;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;showProjectsIHaveBacked;showAllProjects;;;;<75% raised;Comics;;Graphic Novels;;;;;;;;;;;;;
-Test-33;;United Kingdom;Popularity;showAllProjects;showProjectsIHaveSaved;;showProjectsIHaveBacked;showProjectsRecommendedForMe;;;;;Journalism;;;;;;;;;;Video;;;;;
-Test-34;game;;NearMe;showAllProjects;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;;;;<75% raised;Art;Ceramics;;;;;;;;;;;;;;
-Test-35;game;United States;Popularity;showAllProjects;showProjectsIHaveSaved;;;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;;Games;;;;;;;;;Mobile Games;;;;;;
-Test-36;game;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;;;showAllProjects;;<$1,000 pledged;;<75% raised;Music;;;;;;;;;;;Jazz;;;;
-Test-37;;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;;Photography;;;;;;;;;;;;Nature;;;
-Test-38;;United Kingdom;Popularity;showAllProjects;;showProjectsIFollow;showProjectsIHaveBacked;showAllProjects;liveProjects;;<$1,000 goal;;Dance;;;;Performance;;;;;;;;;;;
-Test-39;;United Kingdom;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIFollow;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;<$1,000 pledged;;;Games;;;;;;;;;Mobile Games;;;;;;
-Test-40;future;United States;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIFollow;;showProjectsRecommendedForMe;liveProjects;;;<75% raised;Technology;;;;;;;;;;;;;;Hardware;
-Test-41;;United States;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;showProjectsIHaveBacked;showAllProjects;;;;<75% raised;Music;;;;;;;;;;;Jazz;;;;
-Test-42;future;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;showProjectsIFollow;;showAllProjects;liveProjects;;;;Art;Ceramics;;;;;;;;;;;;;;
-Test-43;future;United States;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;;showProjectsIHaveBacked;showProjectsRecommendedForMe;;;;<75% raised;Fashion;;;;;;Accessories;;;;;;;;;
-Test-44;;United States;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;;;<75% raised;Art;Ceramics;;;;;;;;;;;;;;
-Test-45;game;;NearMe;showAllProjects;showProjectsIHaveSaved;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showAllProjects;;<$1,000 pledged;;<75% raised;All categories;;;;;;;;;;;;;;;
-Test-46;;;NearMe;showAllProjects;;showProjectsIFollow;showProjectsIHaveNotBacked;showAllProjects;;;;<75% raised;Design;;;;;Architecture;;;;;;;;;;
-Test-47;game;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;showProjectsIDoNotFollow;showProjectsIHaveBacked;showAllProjects;;<$1,000 pledged;;;Technology;;;;;;;;;;;;;;Hardware;
-Test-48;game;United Kingdom;Popularity;showAllProjects;;showProjectsIFollow;;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;<$1,000 goal;<75% raised;Fashion;;;;;;Accessories;;;;;;;;;
-Test-49;future;;NearMe;showAllProjects;;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;;Food;;;;;;;;Bacon;;;;;;;
-Test-50;;United Kingdom;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIFollow;;showProjectsRecommendedForMe;;<$1,000 pledged;;<75% raised;Theater;;;;;;;;;;;;;;;Musical
-Test-51;future;;NearMe;showAllProjects;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;;showProjectsRecommendedForMe;;<$1,000 pledged;;;Dance;;;;Performance;;;;;;;;;;;
-Test-52;game;;NearMe;showAllProjects;showProjectsIHaveSaved;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;;Publishing;;;;;;;;;;;;;Academic;;
-Test-53;future;United Kingdom;Popularity;showAllProjects;showProjectsIHaveSaved;showProjectsIFollow;showProjectsIHaveNotBacked;showAllProjects;liveProjects;;;<75% raised;Photography;;;;;;;;;;;;Nature;;;
-Test-54;future;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;;;showProjectsRecommendedForMe;;<$1,000 pledged;;<75% raised;Publishing;;;;;;;;;;;;;Poetry;;
-Test-55;game;United Kingdom;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;;;<$1,000 goal;;Publishing;;;;;;;;;;;;;Poetry;;
-Test-56;;United States;Popularity;showAllProjects;;;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;;;;Comics;;Graphic Novels;;;;;;;;;;;;;
-Test-57;future;United Kingdom;Popularity;showProjectsWeLove;;;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;;;;FilmAndVideo;;;;;;;Action;;;;;;;;
-Test-58;game;;NearMe;showProjectsWeLove;;showProjectsIFollow;;showAllProjects;liveProjects;;;;Fashion;;;;;;Accessories;;;;;;;;;
-Test-59;game;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;;;;Music;;;;;;;;;;;;;;;
-Test-60;future;;NearMe;showProjectsWeLove;;showProjectsIFollow;showProjectsIHaveNotBacked;showAllProjects;liveProjects;;<$1,000 goal;<75% raised;Fashion;;;;;;;;;;;;;;;
-Test-61;game;United States;Popularity;showAllProjects;;;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;;;;Photography;;;;;;;;;;;;Nature;;;
-Test-62;;;NearMe;showAllProjects;;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;liveProjects;;<$1,000 goal;<75% raised;Publishing;;;;;;;;;;;;;Academic;;
-Test-63;future;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;;;showAllProjects;;<$1,000 pledged;;;Crafts;;;;;;;;;;;;;;;
-Test-64;future;;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIFollow;showProjectsIHaveBacked;showAllProjects;;;;;Dance;;;;;;;;;;;;;;;
-Test-65;;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;showProjectsIFollow;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;<$1,000 pledged;;;Publishing;;;;;;;;;;;;;;;
-Test-66;game;United Kingdom;Popularity;showAllProjects;;;showProjectsIHaveNotBacked;showAllProjects;liveProjects;<$1,000 pledged;;;Design;;;;;;;;;;;;;;;
-Test-67;future;;NearMe;showAllProjects;showProjectsIHaveSaved;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;<$1,000 goal;<75% raised;Technology;;;;;;;;;;;;;;;
-Test-68;;United States;Popularity;showProjectsWeLove;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showAllProjects;;<$1,000 pledged;<$1,000 goal;<75% raised;Journalism;;;;;;;;;;;;;;;
-Test-69;game;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;;showProjectsIHaveNotBacked;showAllProjects;liveProjects;<$1,000 pledged;<$1,000 goal;;Comics;;;;;;;;;;;;;;;
-Test-70;game;United States;Popularity;showProjectsWeLove;;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;<$1,000 goal;<75% raised;Games;;;;;;;;;;;;;;;
-Test-71;game;;NearMe;showAllProjects;;showProjectsIFollow;showProjectsIHaveBacked;showAllProjects;liveProjects;<$1,000 pledged;<$1,000 goal;<75% raised;Theater;;;;;;;;;;;;;;;
-Test-72;game;United Kingdom;Popularity;showAllProjects;showProjectsIHaveSaved;showProjectsIDoNotFollow;showProjectsIHaveBacked;showAllProjects;liveProjects;<$1,000 pledged;;<75% raised;Art;;;;;;;;;;;;;;;
-Test-73;game;United States;Popularity;showAllProjects;;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;<$1,000 goal;;Publishing;;;;;;;;;;;;;Academic;;
-Test-74;;;Popularity;showAllProjects;showProjectsIHaveSaved;showProjectsIFollow;;showProjectsRecommendedForMe;liveProjects;;;<75% raised;Food;;;;;;;;;;;;;;;
+test_id;searchQuery;location;sortBy;projectsWeLove;savedProjects;following;projectsIHaveBacked;recommendedForMe;filterProjects;amountPledged;goal;raised;category;subcategory
+Test-01;game;;Popularity;showProjectsWeLove;showProjectsIHaveSaved;showProjectsIFollow;;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;;;Games;Video Games
+Test-02;;United Kingdom;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIDoNotFollow;showProjectsIHaveBacked;showAllProjects;;;<$1,000 goal;<75% raised;All categories;
+Test-03;future;United Kingdom;Popularity;showAllProjects;;;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;;;<75% raised;Games;Video Games
+Test-04;future;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;;showProjectsIHaveNotBacked;showAllProjects;liveProjects;<$1,000 pledged;<$1,000 goal;;Games;Tabletop Games
+Test-05;game;;NearMe;showAllProjects;;showProjectsIFollow;showProjectsIHaveNotBacked;showAllProjects;liveProjects;;;;All categories;
+Test-06;game;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;showProjectsIDoNotFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;;<$1,000 pledged;;<75% raised;Games;Tabletop Games
+Test-07;;;NearMe;showProjectsWeLove;;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;<$1,000 goal;;Games;Video Games
+Test-08;future;;NearMe;showAllProjects;showProjectsIHaveSaved;showProjectsIDoNotFollow;;showProjectsRecommendedForMe;;<$1,000 pledged;<$1,000 goal;;All categories;
+Test-09;future;United States;Popularity;showProjectsWeLove;;showProjectsIFollow;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;;<$1,000 goal;;Games;Tabletop Games
+Test-10;;United States;Popularity;showAllProjects;showProjectsIHaveNotSaved;;;showAllProjects;;<$1,000 pledged;;<75% raised;Games;Video Games
+Test-11;game;;NearMe;showProjectsWeLove;showProjectsIHaveSaved;;showProjectsIHaveNotBacked;showAllProjects;liveProjects;;<$1,000 goal;<75% raised;Games;
+Test-12;;United Kingdom;Popularity;showAllProjects;showProjectsIHaveNotSaved;showProjectsIFollow;;showProjectsRecommendedForMe;liveProjects;<$1,000 pledged;;;Games;Tabletop Games
+Test-13;game;United States;Popularity;showProjectsWeLove;showProjectsIHaveSaved;showProjectsIFollow;showProjectsIHaveNotBacked;showAllProjects;;;;<75% raised;All categories;
+Test-14;game;;NearMe;showProjectsWeLove;showProjectsIHaveNotSaved;;showProjectsIHaveBacked;showProjectsRecommendedForMe;liveProjects;;;<75% raised;Games;Video Games
+Test-15;future;;NearMe;showProjectsWeLove;;showProjectsIDoNotFollow;;showAllProjects;;;;<75% raised;Games;Tabletop Games
+Test-16;game;United Kingdom;Popularity;showProjectsWeLove;showProjectsIHaveSaved;;showProjectsIHaveNotBacked;showAllProjects;liveProjects;<$1,000 pledged;<$1,000 goal;<75% raised;Games;Tabletop Games
+Test-17;;United States;Popularity;showAllProjects;showProjectsIHaveSaved;showProjectsIDoNotFollow;showProjectsIHaveNotBacked;showProjectsRecommendedForMe;;<$1,000 pledged;;<75% raised;All categories;
+Test-18;game;;Popularity;showAllProjects;showProjectsIHaveSaved;;;showAllProjects;liveProjects;;<$1,000 goal;;All categories;

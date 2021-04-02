@@ -118,66 +118,51 @@ features:
            - "Publishing"
            - "Technology"
            - "Theater"
-      - name: artSubcategory     # Subcategories are optional parameters      # Disjoint and conjunctive
-        description: Art subcategory (This parameter is optional)
-        type: string
-        required: false # There is no default value
-        enum:
-           - "Ceramics"
-           - "Conceptual Art"
-           - "Digital Art"
-           - "Illustration"
-           - "Installations"
-           - "Mixed Media"
-           - "Painting"
-           - "Performance Art"
-           - "Public Art"
-           - "Sculpture"
-           - "Social Practice"
-           - "Textiles"
-           - "Video Art"
-      - name: comicsSubcategory
-        description: Comics subcategory (This parameter is optional)
+      - name: subcategory
+        description: Subcategories
         type: string
         required: false
         enum:
-           - "Anthologies"
-           - "Comic Books"
-           - "Events"
-           - "Graphic Novels"
-           - "Webcomics"
-      - name: craftsSubcategory
-        description: Crafts subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
-           - "Candles"
-           - "Crochet"
-           - "DIY"
-           - "Embroidery"
-           - "Glass"
-           - "Knitting"
-           - "Pottery"
-           - "Printing"
-           - "Quilts"
-           - "Stationery"
-           - "Taxidermy"
-           - "Weaving"
-           - "Woodworking"
-      - name: danceSubcategory
-        description: Dance subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: artSubcategory
+           - Ceramics
+           - Conceptual Art
+           - Digital Art
+           - Illustration
+           - Installations
+           - Mixed Media
+           - Painting
+           - Performance Art
+           - Public Art
+           - Sculpture
+           - Social Practice
+           - Textiles
+           - Video Art
+#      - name: comicsSubcategory
+           - Anthologies
+           - Comic Books
+           - Events
+           - Graphic Novels
+           - Webcomics
+#      - name: craftsSubcategory
+           - Candles
+           - Crochet
+           - DIY
+           - Embroidery
+           - Glass
+           - Knitting
+           - Pottery
+           - Printing
+           - Quilts
+           - Stationery
+           - Taxidermy
+           - Weaving
+           - Woodworking
+#      - name: danceSubcategory
            - "Performance"
            - "Residencies"
            - "Spaces"
            - "Workshops"
-      - name: designSubcategory
-        description: Design subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: designSubcategory
            - "Architecture"
            - "Civic Design"
            - "Graphic Design"
@@ -185,11 +170,7 @@ features:
            - "Product Design"
            - "Toys"
            - "Typography"
-      - name: fashionSubcategory
-        description: Fashion subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: fashionSubcategory
            - "Accessories"
            - "Apparel"
            - "Childrenswear"
@@ -198,11 +179,7 @@ features:
            - "Jewelry"
            - "Pet Fashion"
            - "Ready-to-wear"
-      - name: filmAndVideoSubcategory
-        description: Film and video subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: filmAndVideoSubcategory
            - "Action"
            - "Animation"
            - "Comedy"
@@ -222,11 +199,7 @@ features:
            - "Television"
            - "Thrillers"
            - "Webseries"
-      - name: foodSubcategory
-        description: Food subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: foodSubcategory
            - Bacon
            - Community Gardens
            - Cookbooks
@@ -239,11 +212,7 @@ features:
            - Small Batch
            - Spaces
            - Vegan
-      - name: gamesSubcategory
-        description: Games subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: gamesSubcategory
            - Gaming Hardware
            - Live Games
            - Mobile Games
@@ -251,21 +220,13 @@ features:
            - Puzzles
            - Tabletop Games
            - Video Games
-      - name: journalismSubcategory
-        description: Journalism subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: journalismSubcategory
            - Audio
            - Photo
            - Print
            - Video
            - Web
-      - name: musicSubcategory
-        description: Music subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: musicSubcategory
            - Blues
            - Chiptune
            - Classical Music
@@ -284,22 +245,14 @@ features:
            - "R&B"
            - Rock
            - World Music
-      - name: photographySubcategory
-        description: Photography subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: photographySubcategory
            - Animals
            - Fine Art
            - Nature
            - People
            - Photobooks
            - Places
-      - name: publishingSubcategory
-        description: Publishing subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: publishingSubcategory
            - Academic
            - Anthologies
            - Art Books
@@ -317,11 +270,7 @@ features:
            - Translations
            - Young Adults
            - Zines
-      - name: technologySubcategory
-        description: Technology subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: technologySubcategory
            - 3D Printing
            - Apps
            - Camera Equipment
@@ -337,11 +286,7 @@ features:
            - Space Exploration
            - Wearables
            - Web
-      - name: theaterSubcategory
-        description: Theater subcategory (This parameter is optional)
-        type: string
-        required: false
-        enum:
+#      - name: theaterSubcategory
            - Comedy
            - Experimental
            - Festivals
@@ -351,21 +296,191 @@ features:
            - Spaces
    constraints:
      - constraint: sortBy = NearMe excludes location
-     - constraint: artSubcategory requires category=Art
-     - constraint: comicsSubcategory requires category=Comics
-     - constraint: craftsSubcategory requires category=Crafts
-     - constraint: danceSubcategory requires category=Dance
-     - constraint: designSubcategory requires category=Design
-     - constraint: fashionSubcategory requires category=Fashion
-     - constraint: filmAndVideoSubcategory requires category=FilmAndVideo
-     - constraint: foodSubcategory requires category=Food
-     - constraint: gamesSubcategory requires category=Games
-     - constraint: journalismSubcategory requires category=Journalism
-     - constraint: musicSubcategory requires category=Music
-     - constraint: photographySubcategory requires category=Photography
-     - constraint: publishingSubcategory requires category=Publishing
-     - constraint: technologySubcategory requires category=Technology
-     - constraint: theaterSubcategory requires category=Theater
+    # SUBCATEGORIES
+#     - constraint: artSubcategory requires category=Art
+     - constraint: subcategory=Ceramics requires category=Art
+     - constraint: subcategory=Conceptual Art requires category=Art
+     - constraint: subcategory=Digital Art requires category=Art
+     - constraint: subcategory=Illustration requires category=Art
+     - constraint: subcategory=Installations requires category=Art
+     - constraint: subcategory=Mixed Media requires category=Art
+     - constraint: subcategory=Painting requires category=Art
+     - constraint: subcategory=Performance Art requires category=Art
+     - constraint: subcategory=Public Art requires category=Art
+     - constraint: subcategory=Sculpture requires category=Art
+     - constraint: subcategory=Social Practice requires category=Art
+     - constraint: subcategory=Textiles requires category=Art
+     - constraint: subcategory=Video Art requires category=Art
+
+#     - constraint: comicsSubcategory requires category=Comics
+     - constraint: subcategory=Anthologies requires category=Comics
+     - constraint: subcategory=Comic Books requires category=Comics
+     - constraint: subcategory=Events requires category=Comics
+     - constraint: subcategory=Graphic Novels requires category=Comics
+     - constraint: subcategory=Webcomics requires category=Comics
+#     - constraint: craftsSubcategory requires category=Crafts
+     - constraint: subcategory=Candles requires category=Crafts
+     - constraint: subcategory=Crochet requires category=Crafts
+     - constraint: subcategory=DIY requires category=Crafts
+     - constraint: subcategory=Embroidery requires category=Crafts
+     - constraint: subcategory=Glass requires category=Crafts
+     - constraint: subcategory=Knitting requires category=Crafts
+     - constraint: subcategory=Pottery requires category=Crafts
+     - constraint: subcategory=Printing requires category=Crafts
+     - constraint: subcategory=Quilts requires category=Crafts
+     - constraint: subcategory=Stationery requires category=Crafts
+     - constraint: subcategory=Taxidermy requires category=Crafts
+     - constraint: subcategory=Weaving requires category=Crafts
+     - constraint: subcategory=Woodworking requires category=Crafts
+
+#     - constraint: danceSubcategory requires category=Dance
+     - constraint: subcategory=Performance requires category=Dance
+     - constraint: subcategory=Residencies requires category=Dance
+     - constraint: subcategory=Spaces requires category=Dance
+     - constraint: subcategory=Workshops requires category=Dance
+
+#     - constraint: designSubcategory requires category=Design
+     - constraint: subcategory=Architecture requires category=Design
+     - constraint: subcategory=Civic Design requires category=Design
+     - constraint: subcategory=Graphic Design requires category=Design
+     - constraint: subcategory=Interactive Design requires category=Design
+     - constraint: subcategory=Product Design requires category=Design
+     - constraint: subcategory=Toys requires category=Design
+     - constraint: subcategory=Typography requires category=Design
+
+#     - constraint: fashionSubcategory requires category=Fashion
+     - constraint: subcategory=Accessories requires category=Fashion
+     - constraint: subcategory=Apparel requires category=Fashion
+     - constraint: subcategory=Childrenswear requires category=Fashion
+     - constraint: subcategory=Couture requires category=Fashion
+     - constraint: subcategory=Footwear requires category=Fashion
+     - constraint: subcategory=Jewelry requires category=Fashion
+     - constraint: subcategory=Pet Fashion requires category=Fashion
+     - constraint: subcategory=Ready-to-wear requires category=Fashion
+
+#     - constraint: filmAndVideoSubcategory requires category=FilmAndVideo
+     - constraint: subcategory=Action requires category=FilmAndVideo
+     - constraint: subcategory=Animation requires category=FilmAndVideo
+     - constraint: subcategory=Comedy requires category=FilmAndVideo
+     - constraint: subcategory=Documentary requires category=FilmAndVideo
+     - constraint: subcategory=Drama requires category=FilmAndVideo
+     - constraint: subcategory=Experimental requires category=FilmAndVideo
+     - constraint: subcategory=Family requires category=FilmAndVideo
+     - constraint: subcategory=Fantasy requires category=FilmAndVideo
+     - constraint: subcategory=Festivals requires category=FilmAndVideo
+     - constraint: subcategory=Horror requires category=FilmAndVideo
+     - constraint: subcategory=Movie Theaters requires category=FilmAndVideo
+     - constraint: subcategory=Music Videos requires category=FilmAndVideo
+     - constraint: subcategory=Narrative Film requires category=FilmAndVideo
+     - constraint: subcategory=Romance requires category=FilmAndVideo
+     - constraint: subcategory=Science Fiction requires category=FilmAndVideo
+     - constraint: subcategory=Shorts requires category=FilmAndVideo
+     - constraint: subcategory=Television requires category=FilmAndVideo
+     - constraint: subcategory=Thrillers requires category=FilmAndVideo
+     - constraint: subcategory=Webseries requires category=FilmAndVideo
+
+#     - constraint: foodSubcategory requires category=Food
+     - constraint: subcategory=Bacon requires category=Food
+     - constraint: subcategory=Community Gardens requires category=Food
+     - constraint: subcategory=Cookbooks requires category=Food
+     - constraint: subcategory=Drinks requires category=Food
+     - constraint: subcategory=Events requires category=Food
+     - constraint: subcategory=Farmer's Markets requires category=Food
+     - constraint: subcategory=Farms requires category=Food
+     - constraint: subcategory=Food Trucks requires category=Food
+     - constraint: subcategory=Restaurants requires category=Food
+     - constraint: subcategory=Small Batch requires category=Food
+     - constraint: subcategory=Spaces requires category=Food
+     - constraint: subcategory=Vegan requires category=Food
+
+#     - constraint: gamesSubcategory requires category=Games
+     - constraint: subcategory=Gaming Hardware requires category=Games
+     - constraint: subcategory=Live Games requires category=Games
+     - constraint: subcategory=Mobile Games requires category=Games
+     - constraint: subcategory=Playing Cards requires category=Games
+     - constraint: subcategory=Puzzles requires category=Games
+     - constraint: subcategory=Tabletop Games requires category=Games
+     - constraint: subcategory=Video Games requires category=Games
+
+#     - constraint: journalismSubcategory requires category=Journalism
+     - constraint: subcategory=Audio requires category=Journalism
+     - constraint: subcategory=Photo requires category=Journalism
+     - constraint: subcategory=Print requires category=Journalism
+     - constraint: subcategory=Video requires category=Journalism
+     - constraint: subcategory=Web requires category=Journalism
+
+#     - constraint: musicSubcategory requires category=Music
+     - constraint: subcategory=Blues requires category=Music
+     - constraint: subcategory=Chiptune requires category=Music
+     - constraint: subcategory=Classical Music requires category=Music
+     - constraint: subcategory=Comedy requires category=Music
+     - constraint: subcategory=Country & Folk requires category=Music
+     - constraint: subcategory=Electronic Music requires category=Music
+     - constraint: subcategory=Faith requires category=Music
+     - constraint: subcategory=Hip-Hop requires category=Music
+     - constraint: subcategory=Indie Rock requires category=Music
+     - constraint: subcategory=Jazz requires category=Music
+     - constraint: subcategory=Kids requires category=Music
+     - constraint: subcategory=Latin requires category=Music
+     - constraint: subcategory=Metal requires category=Music
+     - constraint: subcategory=Pop requires category=Music
+     - constraint: subcategory=Punk requires category=Music
+     - constraint: subcategory=R&B requires category=Music
+     - constraint: subcategory=Rock requires category=Music
+     - constraint: subcategory=World Music requires category=Music
+
+#     - constraint: photographySubcategory requires category=Photography
+     - constraint: subcategory=Animals requires category=Photography
+     - constraint: subcategory=Fine Art requires category=Photography
+     - constraint: subcategory=Nature requires category=Photography
+     - constraint: subcategory=People requires category=Photography
+     - constraint: subcategory=Photobooks requires category=Photography
+     - constraint: subcategory=Places requires category=Photography
+
+     #     - constraint: publishingSubcategory requires category=Publishing
+     - constraint: subcategory=Academic requires category=Publishing
+     - constraint: subcategory=Anthologies requires category=Publishing
+     - constraint: subcategory=Art Books requires category=Publishing
+     - constraint: subcategory=Calendars requires category=Publishing
+     - constraint: subcategory=Children's Books requires category=Publishing
+     - constraint: subcategory=Comedy requires category=Publishing
+     - constraint: subcategory=Fiction requires category=Publishing
+     - constraint: subcategory=Letterpress requires category=Publishing
+     - constraint: subcategory=Literary Journals requires category=Publishing
+     - constraint: subcategory=Literary Spaces requires category=Publishing
+     - constraint: subcategory=Nonfiction requires category=Publishing
+     - constraint: subcategory=Periodicals requires category=Publishing
+     - constraint: subcategory=Poetry requires category=Publishing
+     - constraint: subcategory=Radio & Podcasts requires category=Publishing
+     - constraint: subcategory=Translations requires category=Publishing
+     - constraint: subcategory=Young Adults requires category=Publishing
+     - constraint: subcategory=Zines requires category=Publishing
+
+#     - constraint: technologySubcategory requires category=Technology
+     - constraint: subcategory=3D Printing requires category=Technology
+     - constraint: subcategory=Apps requires category=Technology
+     - constraint: subcategory=Camera Equipment requires category=Technology
+     - constraint: subcategory=DIY Electronics requires category=Technology
+     - constraint: subcategory=Fabrication Tools requires category=Technology
+     - constraint: subcategory=Flight requires category=Technology
+     - constraint: subcategory=Gadgets requires category=Technology
+     - constraint: subcategory=Hardware requires category=Technology
+     - constraint: subcategory=Makerspaces requires category=Technology
+     - constraint: subcategory=Robots requires category=Technology
+     - constraint: subcategory=Software requires category=Technology
+     - constraint: subcategory=Sound requires category=Technology
+     - constraint: subcategory=Space Exploration requires category=Technology
+     - constraint: subcategory=Wearables requires category=Technology
+     - constraint: subcategory=Web requires category=Technology
+
+#     - constraint: theaterSubcategory requires category=Theater
+     - constraint: subcategory=Comedy requires category=Theater
+     - constraint: subcategory=Experimental requires category=Theater
+     - constraint: subcategory=Festivals requires category=Theater
+     - constraint: subcategory=Immersive requires category=Theater
+     - constraint: subcategory=Musical requires category=Theater
+     - constraint: subcategory=Plays requires category=Theater
+     - constraint: subcategory=Spaces requires category=Theater
    configuration:
       ordering_parameters:
          - sortBy
@@ -382,21 +497,7 @@ features:
         - goal
         - raised
         - category            # TODO: Consider removal from conjunctive
-        - artSubcategory
-        - comicsSubcategory
-        - craftsSubcategory
-        - danceSubcategory
-        - designSubcategory
-        - fashionSubcategory
-        - filmAndVideoSubcategory
-        - foodSubcategory
-        - gamesSubcategory
-        - journalismSubcategory
-        - musicSubcategory
-        - photographySubcategory
-        - publishingSubcategory
-        - technologySubcategory
-        - theaterSubcategory
+        - subcategory
       complete_filters:
         - parameter: category
           all_value: "All categories"
@@ -421,18 +522,4 @@ features:
         - parameter: goal            # TODO: CHECK inconsistency
         - parameter: raised          # TODO: CHECK inconsistency
         - parameter: category        # TODO: Difference of two
-        - parameter: artSubcategory
-        - parameter: comicsSubcategory
-        - parameter: craftsSubcategory
-        - parameter: danceSubcategory
-        - parameter: designSubcategory
-        - parameter: fashionSubcategory
-        - parameter: filmAndVideoSubcategory
-        - parameter: foodSubcategory
-        - parameter: gamesSubcategory
-        - parameter: journalismSubcategory
-        - parameter: musicSubcategory
-        - parameter: photographySubcategory
-        - parameter: publishingSubcategory
-        - parameter: technologySubcategory
-        - parameter: theaterSubcategory
+        - parameter: subcategory
