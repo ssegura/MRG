@@ -22,8 +22,8 @@ import isa.util.TestCaseReader;
 public class main {
 
 	// IMDb
-//	static String sutName = "IMDb";
-//	static String featureId = "SearchTitle";
+	static String sutName = "IMDb";
+	static String featureId = "SearchTitle";
 	
 	// Prestashop
 	//static String sutName = "Prestashop";
@@ -45,6 +45,11 @@ public class main {
 //	static String sutName = "Kickstarter";
 //	static String featureId = "DiscoverProjects";
 
+	// Transfermarkt
+//	static String sutName = "Transfermarkt";
+//	static String featureId = "PersonalData";
+
+
 //	// Steam
 //	static String sutName = "Steam";
 //	static String featureId = "SearchTheStore";
@@ -54,8 +59,8 @@ public class main {
 //	static String featureId = "Search";
 
 	// Slideshare
-	static String sutName = "Slideshare";
-	static String featureId = "Explore";
+//	static String sutName = "Slideshare";
+//	static String featureId = "Explore";
 
 	// CommentsAPI
 	//static String sutName = "CommentsAPI";

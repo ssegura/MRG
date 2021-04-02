@@ -1,0 +1,31 @@
+# PERSONAL DATA
+
+# Parameters
+# TODO: Limit 250
+# TODO: exact search is an enum with a single value
+# TODO: TAke into account type= integer
+# TODO: Cannot specify disjoint and complete filters due to type=integer
+# TODO: - Use offset if possible?
+placeOfBirth: conjunctive
+exactSearch: conjunctive     # optional, enum with a single value
+citizenship: conjunctive
+secondCitizenship: conjunctive
+countryOfBirth: conjunctive, disjoint, complete
+confederation: conjunctive, complete, disjoint? TODO: CHECK DISJOINT
+dayBirth: conjunctive, complete, disjoint
+monthBirth: conjunctive, complete, disjoint
+yearBirth: conjunctive, complete, disjoint
+
+minAge: default: 0, conjunctive
+maxAge: default: 150, conjunctive,
+
+minYear: default: 1850, conjunctive
+maxYear: default: 2006, conjunctive
+minHeight: default: 0, conjunctive
+maxHeight: default: 220, conjunctive
+
+
+citizenship and secondCitizenship are disjoint (Spain Argentina)
+
+
+
