@@ -167,7 +167,7 @@ public class main {
 
 				// Write MRs to extended CSV
 				// System.out.println("Writing MRs to extended CSV");
-				MRWriter.writeMRsToExtendedCSV(outputDirPath + sutName + "/MRs-random-extended-" + (i+1) + ".csv", (List<MetamorphicRelation>) mrs, maxFutcs);
+//				MRWriter.writeMRsToExtendedCSV(outputDirPath + sutName + "/MRs-random-extended-" + (i+1) + ".csv", (List<MetamorphicRelation>) mrs, maxFutcs);
 				
 				// Write MRs to Text
 				// System.out.println("Writing MRs to text");

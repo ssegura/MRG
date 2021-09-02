@@ -17,7 +17,7 @@ import isa.mr.inference.transformations.shuffling.ShufflingExtendTransformation;
 import isa.sut.SUT;
 import isa.testcases.TestCase;
 
-import static isa.mr.inference.generators.MetamorphicRelation.removeSubsets;
+//import static isa.mr.inference.generators.MetamorphicRelation.removeSubsets;
 
 /**
  * Random generation (i.e. inference) of MRs
@@ -71,13 +71,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)){
+//					if (!mr.containsSupersets(mrs)){
 						// Remove subsets
-						removeSubsets(mrs, mr);
-						mr.setIdentifier("MR" + id++);
-						mrs.add(mr);
-						nMRs++;
-					}
+//						removeSubsets(mrs, mr);
+					mr.setIdentifier("MR" + id++);
+					mrs.add(mr);
+					nMRs++;
+//					}
 
 				}
 
@@ -95,13 +95,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)) {
+//					if (!mr.containsSupersets(mrs)) {
 						// Remove subsets
-						removeSubsets(mrs, mr);
-						mr.setIdentifier("MR" + id++);
-						mrs.add(mr);
-						nMRs++;
-					}
+//						removeSubsets(mrs, mr);
+					mr.setIdentifier("MR" + id++);
+					mrs.add(mr);
+					nMRs++;
+//					}
 				}
 
 				numTries++;
@@ -118,13 +118,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)) {
+//					if (!mr.containsSupersets(mrs)) {
 						// Remove subsets
-						removeSubsets(mrs, mr);
-						mr.setIdentifier("MR" + id++);
-						mrs.add(mr);
-						nMRs++;
-					}
+//						removeSubsets(mrs, mr);
+					mr.setIdentifier("MR" + id++);
+					mrs.add(mr);
+					nMRs++;
+//					}
 				}
 
 				numTries++;	
@@ -141,13 +141,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)) {
+//					if (!mr.containsSupersets(mrs)) {
 						// Remove subsets
-						removeSubsets(mrs, mr);
-						mr.setIdentifier("MR" + id++);
-						mrs.add(mr);
-						nMRs++;
-					}
+//						removeSubsets(mrs, mr);
+					mr.setIdentifier("MR" + id++);
+					mrs.add(mr);
+					nMRs++;
+//					}
 				}
 
 				numTries++;
@@ -164,13 +164,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)) {
+//					if (!mr.containsSupersets(mrs)) {
 						// Remove subsets
-						removeSubsets(mrs, mr);
+//						removeSubsets(mrs, mr);
 						mr.setIdentifier("MR" + id++);
 						mrs.add(mr);
 						nMRs++;
-					}
+//					}
 				}
 
 				numTries++;	
@@ -187,13 +187,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)) {
+//					if (!mr.containsSupersets(mrs)) {
 						// Remove subsets
-						removeSubsets(mrs, mr);
+//						removeSubsets(mrs, mr);
 						mr.setIdentifier("MR" + id++);
 						mrs.add(mr);
 						nMRs++;
-					}
+//					}
 				}
 
 				numTries++;
@@ -210,13 +210,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)) {
+//					if (!mr.containsSupersets(mrs)) {
 						// Remove subsets
-						removeSubsets(mrs, mr);
+//						removeSubsets(mrs, mr);
 						mr.setIdentifier("MR" + id++);
 						mrs.add(mr);
 						nMRs++;
-					}
+//					}
 				}
 
 				numTries++;
@@ -233,13 +233,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)) {
+//					if (!mr.containsSupersets(mrs)) {
 						// Remove subsets
-						removeSubsets(mrs, mr);
-						mr.setIdentifier("MR" + id++);
-						mrs.add(mr);
-						nMRs++;
-					}
+//						removeSubsets(mrs, mr);
+					mr.setIdentifier("MR" + id++);
+					mrs.add(mr);
+					nMRs++;
+//					}
 				}
 
 				numTries++;
@@ -257,13 +257,13 @@ public class RandomMRGenerator {
 
 				if (mr != null && !mrs.contains(mr)) {
 					// If mrs does not contain a superset of mr
-					if (!mr.containsSupersets(mrs)) {
+//					if (!mr.containsSupersets(mrs)) {
 						// Remove subsets
-						removeSubsets(mrs, mr);
+//						removeSubsets(mrs, mr);
 						mr.setIdentifier("MR" + id++);
 						mrs.add(mr);
 						nMRs++;
-					}
+//					}
 				}
 
 				numTries++;

@@ -6,6 +6,7 @@ import isa.sut.specification.pojo.Specification;
 import isa.testcases.TestCase;
 import isa.testcases.TestParameter;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -26,6 +27,7 @@ public class DuplicateDetectionTest {
 	static MetamorphicRelation mrSuperset;
 
 	@BeforeClass
+	@Ignore
 	public static void setUp() throws Exception {
 		Specification spec = SUTSpecification.readSpecification("src/test/resources/Bikewise/spec-complete.yml");
 		sut = new SUT(spec,"GetIncidents");
@@ -70,6 +72,7 @@ public class DuplicateDetectionTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testPermutations() {
 		// Two MR containing the same futcs in different orders are consireded equivalent
 
@@ -122,6 +125,7 @@ public class DuplicateDetectionTest {
 	}
 
 	@Test
+	@Ignore
 	public void testRemoveSubsets(){
 		// After adding a new MR to the list of MRs, all the subsets of that MR are removed
 		List<MetamorphicRelation> mrs = new ArrayList<>();
@@ -137,6 +141,7 @@ public class DuplicateDetectionTest {
 	}
 
 	@Test
+	@Ignore
 	public void testCheckSupersets(){
 		// If a new MR is created, it will not be added to the list of MRs if it is a subset of another MR already present in the list
 		assertTrue("Superset not detected", mrSubset.containsSupersets(Collections.singletonList(mrSuperset)));
