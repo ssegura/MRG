@@ -8,8 +8,12 @@ import isa.mr.inference.generators.MetamorphicRelation;
 import isa.testcases.TestCase;
 import org.junit.Test;
 
+import static isa.mr.inference.generators.MetamorphicRelation.printParameterNames;
+import static isa.mr.inference.generators.MetamorphicRelation.printParameters;
+import static isa.mr.inference.generators.MetamorphicRelationType.*;
+
 //import static isa.mr.inference.generators.MetamorphicRelation.printParameterNames;
-//import static isa.mr.inference.generators.MetamorphicRelation.printParameters;
+
 
 public class MRWriter {
 
@@ -39,98 +43,67 @@ public class MRWriter {
 
 	}
 
-
 	/**
 	 *
 	 * @param filePath File path of extended CVS file (rewritten if it already exists)
 	 * @param mrs Metamorphic relations
 	 */
-//	public static void writeMRsToExtendedCSV(String filePath, List<MetamorphicRelation> mrs, int maxFutcs) {
-//
-//		List<Map<String,String>> data = new ArrayList<Map<String,String>>();
-//
-//		for(MetamorphicRelation mr: mrs) {
-//			Map<String,String> mrData = new LinkedHashMap<String,String>();
-//
-//			TestCase sourceTestCase = mr.getSourceTestCase();
-//			List<TestCase> followUpTestCases = (List<TestCase>) mr.getFollowUpTestCases();
-//
-//			mrData.put("MR", mr.getIdentifier());
-//			mrData.put("type", mr.getType().name());
-//			mrData.put("STC_id", sourceTestCase.getId());
-//			mrData.put("STC_n_parameters", Integer.toString(sourceTestCase.getParameters().size()));
-//			mrData.put("number_of_FUTCs", Integer.toString(followUpTestCases.size()));
-//			mrData.put("local_distance", Integer.toString(mr.localDistance()));
-//			mrData.put("source_parameters_list", mr.printSourceTestCaseParameters());
-//
-////			int i = 0;
-//
-//			for(int i = 0; i < maxFutcs; i++){
-//
-//				if(followUpTestCases.size() > i){
-//					TestCase futc = followUpTestCases.get(i);
-//					Diff diff = TestCaseDiff.testCaseDiff(sourceTestCase, futc);
-//
-//					if (!diff.getAddedParameters().isEmpty()) {
-//						mrData.put("added_parameters_futc_" + (i+1), printParameters(diff.getAddedParameters()));
-//					}else{
-//						mrData.put("added_parameters_futc_" + (i+1), "[]");
-//					}
-//
-//
-//					if (!diff.getRemovedParameters().isEmpty()) {
-//						mrData.put("removed_parameters_futc_" + (i+1), printParameterNames(diff.getRemovedParameters()));
-//					}else{
-//						mrData.put("removed_parameters_futc_" + (i+1), "[]");
-//					}
-//
-//					if (!diff.getChangedParameters().isEmpty()) {
-//						mrData.put("changed_parameters_futc_" + (i+1), printParameters(diff.getChangedParameters()));
-//					}else{
-//						mrData.put("changed_parameters_futc_" + (i+1), "[]");
-//					}
-//					sourceTestCase = futc;
-//
-//				}else{
-//					mrData.put("added_parameters_futc_" + (i+1), "[]");
-//					mrData.put("removed_parameters_futc_" + (i+1), "[]");
-//					mrData.put("changed_parameters_futc_" + (i+1), "[]");
-//				}
-//			}
+	public static void writeMRsToExtendedCSV(String filePath, List<MetamorphicRelation> mrs, int maxFutcs) {
 
-//			for(TestCase futc: followUpTestCases){ (Commented twice)
-////				i = i + 1;
-//				Diff diff = TestCaseDiff.testCaseDiff(sourceTestCase, futc);
-//
-//				if (!diff.getAddedParameters().isEmpty()) {
-//					mrData.put("added_parameters_futc_" + i, printParameters(diff.getAddedParameters()));
-//				}else{
-//					mrData.put("added_parameters_futc_" + i, "[]");
-//				}
-//
-//
-//				if (!diff.getRemovedParameters().isEmpty()) {
-//					mrData.put("removed_parameters_futc_" + i, printParameterNames(diff.getRemovedParameters()));
-//				}else{
-//					mrData.put("removed_parameters_futc_" + i, "[]");
-//				}
-//
-//				if (!diff.getChangedParameters().isEmpty()) {
-//					mrData.put("changed_parameters_futc_" + i, printParameters(diff.getChangedParameters()));
-//				}else{
-//					mrData.put("changed_parameters_futc_" + i, "[]");
-//				}
-//				sourceTestCase = futc;
-//
-//			}
-			
-//			data.add(mrData);
-//		}
-		
-//		CSVWriter writer = new CSVWriter(filePath);
-//		writer.write(data);
-		
-//	}
+		List<Map<String,String>> data = new ArrayList<>();
+
+		for(MetamorphicRelation mr: mrs) {
+			Map<String,String> mrData = new LinkedHashMap<>();
+
+			TestCase sourceTestCase = mr.getSourceTestCase();
+			List<TestCase> followUpTestCases = (List<TestCase>) mr.getFollowUpTestCases();
+
+			mrData.put("MR", mr.getIdentifier());
+			mrData.put("type", mr.getType().name());
+			mrData.put("STC_id", sourceTestCase.getId());
+			mrData.put("STC_n_parameters", Integer.toString(sourceTestCase.getParameters().size()));
+			mrData.put("number_of_FUTCs", Integer.toString(followUpTestCases.size()));
+			mrData.put("local_distance", Integer.toString(mr.localDistance()));
+			mrData.put("STC", mr.printSourceTestCaseParameters());
+
+
+			for(int i = 0; i < maxFutcs; i++){
+
+				if(followUpTestCases.size() > i) {
+					TestCase futc = followUpTestCases.get(i);
+					Diff diff = TestCaseDiff.testCaseDiff(sourceTestCase, futc);
+
+					if(mr.getType().equals(CONJUNCTIVE_EXTEND) || mr.getType().equals(DISJUNCTIVE_EXTEND) || mr.getType().equals(EQUIVALENCE_EXTEND)) {				// Added parameters
+						mrData.put("FUTC_" + (i+1), printParameters(diff.getAddedParameters()));
+					}else if(mr.getType().equals(CONJUNCTIVE_CONTRACT) || mr.getType().equals(DISJUNCTIVE_CONTRACT) || mr.getType().equals(SHUFFLING_CONTRACT)){	// Removed parameters
+						mrData.put("FUTC_" + (i+1), printParameterNames(diff.getRemovedParameters()));
+					} else if(mr.getType().equals(COMPLETE_EXTEND) || mr.getType().equals(SHUFFLING_EXTEND)) {		// The first futc of a COMPLETE_EXTEND MR consists on adding a parameter, the rest consist on changing its value
+						if(diff.getChangedParameters().isEmpty()) {		// Added parameter
+							mrData.put("FUTC_" + (i+1), printParameters(diff.getAddedParameters()));
+						} else {										// Changed parameter
+							mrData.put("FUTC_" + (i+1), printParameters(diff.getChangedParameters()));
+						}
+					} else {	// Only Changed parameters (DISJOINT_EXTEND)
+						mrData.put("FUTC_" + (i+1), printParameters(diff.getChangedParameters()));
+					}
+
+					sourceTestCase = futc;
+
+				} else {
+					mrData.put("FUTC_" + (i+1), "[]");
+				}
+
+
+
+			}
+
+			data.add(mrData);
+		}
+
+		CSVWriter writer = new CSVWriter(filePath);
+		writer.write(data);
+
+	}
 	
 	/**
 	 * @param filePath TXT file path. Metamorphic relations are written using the template by Segura et al.

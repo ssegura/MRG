@@ -14,7 +14,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import static isa.mr.inference.generators.MetamorphicRelation.removeSubsets;
+//import static isa.mr.inference.generators.MetamorphicRelation.removeSubsets;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -124,28 +124,28 @@ public class DuplicateDetectionTest {
 
 	}
 
-	@Test
-	@Ignore
-	public void testRemoveSubsets(){
-		// After adding a new MR to the list of MRs, all the subsets of that MR are removed
-		List<MetamorphicRelation> mrs = new ArrayList<>();
-		mrs.add(mrSubset);
+//	@Test
+//	@Ignore
+//	public void testRemoveSubsets(){
+//		// After adding a new MR to the list of MRs, all the subsets of that MR are removed
+//		List<MetamorphicRelation> mrs = new ArrayList<>();
+//		mrs.add(mrSubset);
+//
+////		System.out.println(mrSubset);
+////		System.out.println(mrSuperset);
+//
+//		// After calling this function, mrs should not contain mrSubset
+//		removeSubsets(mrs, mrSuperset);
+//		assertEquals("Subset not deleted properly", 0, mrs.size());
+//
+//	}
 
-//		System.out.println(mrSubset);
-//		System.out.println(mrSuperset);
-
-		// After calling this function, mrs should not contain mrSubset
-		removeSubsets(mrs, mrSuperset);
-		assertEquals("Subset not deleted properly", 0, mrs.size());
-
-	}
-
-	@Test
-	@Ignore
-	public void testCheckSupersets(){
-		// If a new MR is created, it will not be added to the list of MRs if it is a subset of another MR already present in the list
-		assertTrue("Superset not detected", mrSubset.containsSupersets(Collections.singletonList(mrSuperset)));
-
-	}
+//	@Test
+//	@Ignore
+//	public void testCheckSupersets(){
+//		// If a new MR is created, it will not be added to the list of MRs if it is a subset of another MR already present in the list
+//		assertTrue("Superset not detected", mrSubset.containsSupersets(Collections.singletonList(mrSuperset)));
+//
+//	}
 
 }

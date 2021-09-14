@@ -221,7 +221,7 @@ public class MetamorphicRelation {
 	}
 
 	// Returns parameters' names
-	private String printParameterNames(List<TestParameter> params) {
+	public static String printParameterNames(List<TestParameter> params) {
 		String res="[";
 		
 		for(TestParameter param:params) {
@@ -236,7 +236,7 @@ public class MetamorphicRelation {
 	}
 
 	// Returns parameters' names and values (excluding those with undefined value: "<TBD>")
-	private String printParameters(Collection<TestParameter> params) {
+	public static String printParameters(Collection<TestParameter> params) {
 		String res="[";
 		
 		for(TestParameter param:params) {
@@ -254,7 +254,7 @@ public class MetamorphicRelation {
 	}
 	
 	// Returns source test parameters. Values are only specified when relevant for the MR (i.e. they are changed in the follow-up test case).
-	private String printSourceTestCaseParameters() {
+	public String printSourceTestCaseParameters() {
 		String res = "[";
 		
 		TestCase followUpTestCase = followUpTestCases.get(0);
