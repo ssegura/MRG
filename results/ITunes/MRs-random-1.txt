@@ -1,42 +1,19 @@
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR17 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [term, country:IT, media, attribute, callback, limit, version]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AG]
-then the source and the follow-up output(s) should be disjoint.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR23 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, lang]
-and a follow-up test case is constructed by adding the following parameters [limit:50, media:all, version:2]
+MR4 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, entity, version]
+and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us]
 and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR47 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [term, country:IT, media, entity, lang, version, explicit]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AG]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AI]
-then the source and the follow-up output(s) should be disjoint.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR15 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [term, country:IT, media, entity, limit, lang, explicit]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AG]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AI]
-then the source and the follow-up output(s) should be disjoint.
+MR57 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, entity, attribute, callback, lang, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+and a follow-up test case is constructed by adding the following parameters [country:US]
+then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
@@ -49,70 +26,39 @@ then the source and the follow-up output(s) should have the same items in the sa
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR16 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity, limit, lang, explicit]
-and a follow-up test case is constructed by adding the following parameters [version:2]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR25 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, lang]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes, media:all]
-and a follow-up test case is constructed by adding the following parameters [limit:50, version:2]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR29 (EQUIVALENCE_EXTEND):
+MR36 (EQUIVALENCE_EXTEND):
 if a source test case is run with the inputs [term, country, media, entity, attribute, version]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes, lang:en_us, limit:50]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR13 (DISJOINT_EXTEND):
+MR15 (DISJOINT_EXTEND):
 if a source test case is run with the inputs [term, country:JP, media, attribute, lang, version, explicit]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
 then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR33 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, attribute, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [country:US, limit:50]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR50 (EQUIVALENCE_EXTEND):
+MR58 (EQUIVALENCE_EXTEND):
 if a source test case is run with the inputs [term, media, entity, attribute, callback, lang, version, explicit]
 and a follow-up test case is constructed by adding the following parameters [country:US, limit:50]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR35 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, attribute, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-and a follow-up test case is constructed by adding the following parameters [country:US]
-then the source and the follow-up output(s) should have the same items in the same order.
+MR18 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:IT, media, entity, limit, lang, explicit]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AG]
+then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR53 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50]
-and a follow-up test case is constructed by adding the following parameters [media:all]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR44 (EQUIVALENCE_EXTEND):
+MR50 (EQUIVALENCE_EXTEND):
 if a source test case is run with the inputs [term, country, media, entity, callback, explicit]
 and a follow-up test case is constructed by adding the following parameters [lang:en_us, version:2]
 and a follow-up test case is constructed by adding the following parameters [limit:50]
@@ -120,54 +66,7 @@ then the source and the follow-up output(s) should have the same items in the sa
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR18 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, attribute, callback, limit, version]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR4 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, entity, version]
-and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR38 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, limit, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [media:all]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR2 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, attribute, callback, limit, lang, explicit]
-and a follow-up test case is constructed by adding the following parameters [version:2]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR55 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us, media:all]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR40 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, limit, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us, media:all]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR57 (EQUIVALENCE_EXTEND):
+MR65 (EQUIVALENCE_EXTEND):
 if a source test case is run with the inputs [term, country, callback, version, explicit]
 and a follow-up test case is constructed by adding the following parameters [limit:50, media:all]
 and a follow-up test case is constructed by adding the following parameters [lang:en_us]
@@ -175,33 +74,16 @@ then the source and the follow-up output(s) should have the same items in the sa
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR39 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, limit, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [country:US]
+MR27 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, lang]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes, limit:50, version:2]
 and a follow-up test case is constructed by adding the following parameters [media:all]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR30 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity, attribute, version]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes, limit:50]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR34 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, attribute, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [country:US]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR41 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [term, country:JP, media, entity, attribute, callback, lang, version, explicit]
+MR17 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:IT, media, entity, limit, lang, explicit]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
@@ -211,33 +93,26 @@ then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR24 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, lang]
-and a follow-up test case is constructed by adding the following parameters [version:2]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes, limit:50, media:all]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR31 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity, attribute, version]
+MR40 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, attribute, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [country:US]
 and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR9 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, entity, attribute, callback, limit, explicit]
-and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [version:2]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR14 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, attribute, lang, version, explicit]
+MR6 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, entity, version]
+and a follow-up test case is constructed by adding the following parameters [country:US, explicit:Yes, lang:en_us]
 and a follow-up test case is constructed by adding the following parameters [limit:50]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR30 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, lang]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes, media:all]
+and a follow-up test case is constructed by adding the following parameters [limit:50, version:2]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
@@ -250,7 +125,69 @@ then the source and the follow-up output(s) should have the same items in the sa
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR52 (DISJOINT_EXTEND):
+MR41 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, attribute, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+and a follow-up test case is constructed by adding the following parameters [country:US]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR28 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, lang]
+and a follow-up test case is constructed by adding the following parameters [limit:50, media:all, version:2]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR22 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, attribute, callback, limit, version]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes, lang:en_us]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR64 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50, media:all]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR8 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, media, entity:album, attribute, callback, limit, explicit]
+and a follow-up test case is constructed by changing the value of the following parameters [entity:mix]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR48 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, attribute, callback, lang, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR13 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, entity, attribute, callback, limit, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [country:US]
+and a follow-up test case is constructed by adding the following parameters [version:2]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR53 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, callback, explicit]
+and a follow-up test case is constructed by adding the following parameters [limit:50, version:2]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR60 (DISJOINT_EXTEND):
 if a source test case is run with the inputs [term, country:IT, callback, version, explicit]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
@@ -258,65 +195,10 @@ then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR6 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, entity, version]
-and a follow-up test case is constructed by adding the following parameters [country:US, explicit:Yes, lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR56 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50, media:all]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR42 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity, attribute, callback, lang, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR21 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, lang]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes, limit:50, media:all, version:2]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR11 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, entity, attribute, callback, limit, explicit]
+MR35 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, attribute, version]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes, limit:50]
 and a follow-up test case is constructed by adding the following parameters [lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [country:US, version:2]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR37 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, limit, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us, media:all]
-and a follow-up test case is constructed by adding the following parameters [country:US]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR22 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, lang]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes, limit:50, version:2]
-and a follow-up test case is constructed by adding the following parameters [media:all]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR5 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, entity, version]
-and a follow-up test case is constructed by adding the following parameters [country:US]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
@@ -328,8 +210,67 @@ then the source and the follow-up output(s) should have the same items in the sa
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR27 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [term, country:IT, media, entity, attribute, version]
+MR38 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, attribute, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [country:US, limit:50]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR23 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, attribute, callback, limit, version]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR14 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:JP, media, attribute, lang, version, explicit]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR61 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50]
+and a follow-up test case is constructed by adding the following parameters [media:all]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR19 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, limit, lang, explicit]
+and a follow-up test case is constructed by adding the following parameters [version:2]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR47 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:JP, media, entity, attribute, callback, lang, version, explicit]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AG]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AI]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR43 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, limit, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us, media:all]
+and a follow-up test case is constructed by adding the following parameters [country:US]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR0 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:JP, media, attribute, callback, limit, lang, explicit]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
@@ -338,18 +279,12 @@ then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR36 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, attribute, version, explicit]
+MR31 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, lang]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
 and a follow-up test case is constructed by adding the following parameters [limit:50]
-and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [media:all, version:2]
 then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR28 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity:album, attribute, version]
-and a follow-up test case is constructed by changing the value of the following parameters [entity:mix]
-then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
@@ -364,48 +299,25 @@ then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR45 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity, callback, explicit]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [limit:50, version:2]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR43 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [term, country:JP, media, entity, callback, explicit]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
-and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
-then the source and the follow-up output(s) should be disjoint.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR19 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, attribute, callback, limit, version]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes, lang:en_us]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR32 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity, attribute, version]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes, lang:en_us]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-then the source and the follow-up output(s) should have the same items in the same order.
-
-In the domain of ITunes (Search)
-the following metamorphic relation should hold
-MR12 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, entity, attribute, callback, limit, explicit]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+MR5 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, entity, version]
 and a follow-up test case is constructed by adding the following parameters [country:US]
-and a follow-up test case is constructed by adding the following parameters [version:2]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR20 (DISJOINT_EXTEND):
+MR63 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us, media:all]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR24 (DISJOINT_EXTEND):
 if a source test case is run with the inputs [term, country:JP, callback, lang]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
 and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
@@ -417,7 +329,145 @@ then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR54 (EQUIVALENCE_EXTEND):
+MR26 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, lang]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes, limit:50, media:all, version:2]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR34 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, attribute, version]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes, lang:en_us, limit:50]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR49 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:JP, media, entity, callback, explicit]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR56 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, lang, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR42 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, attribute, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR25 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:JP, callback, lang]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR46 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, limit, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us, media:all]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR16 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, attribute, lang, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR37 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, attribute, version]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes, lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [limit:50]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR32 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:IT, media, entity, attribute, version]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AG]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR9 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, entity, attribute, callback, limit, explicit]
+and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [version:2]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR52 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, callback, explicit]
+and a follow-up test case is constructed by adding the following parameters [version:2]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR45 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, limit, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [country:US]
+and a follow-up test case is constructed by adding the following parameters [media:all]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR44 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, limit, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [country:US, lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [media:all]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR2 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, attribute, callback, limit, lang, explicit]
+and a follow-up test case is constructed by adding the following parameters [version:2]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR29 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, callback, lang]
+and a follow-up test case is constructed by adding the following parameters [version:2]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes, limit:50, media:all]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR54 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:IT, media, entity, lang, version, explicit]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AG]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AI]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR62 (EQUIVALENCE_EXTEND):
 if a source test case is run with the inputs [term, country, callback, version, explicit]
 and a follow-up test case is constructed by adding the following parameters [lang:en_us]
 and a follow-up test case is constructed by adding the following parameters [limit:50]
@@ -426,40 +476,72 @@ then the source and the follow-up output(s) should have the same items in the sa
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR48 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity, lang, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
+MR11 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, entity, attribute, callback, limit, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [country:US, version:2]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR49 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, media, entity, attribute, callback, lang, version, explicit]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-and a follow-up test case is constructed by adding the following parameters [country:US]
+MR59 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:IT, callback, version, explicit]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR39 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, attribute, version, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [country:US, limit:50]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR26 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, callback, lang]
-and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
-and a follow-up test case is constructed by adding the following parameters [limit:50]
-and a follow-up test case is constructed by adding the following parameters [media:all, version:2]
+MR12 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, media, entity, attribute, callback, limit, explicit]
+and a follow-up test case is constructed by adding the following parameters [country:US, version:2]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
 then the source and the follow-up output(s) should have the same items in the same order.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR46 (EQUIVALENCE_EXTEND):
-if a source test case is run with the inputs [term, country, media, entity, callback, explicit]
-and a follow-up test case is constructed by adding the following parameters [version:2]
-and a follow-up test case is constructed by adding the following parameters [lang:en_us, limit:50]
-then the source and the follow-up output(s) should have the same items in the same order.
+MR55 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:IT, media, entity, lang, version, explicit]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+then the source and the follow-up output(s) should be disjoint.
 
 In the domain of ITunes (Search)
 the following metamorphic relation should hold
-MR8 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [term, media, entity:album, attribute, callback, limit, explicit]
+MR33 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity:album, attribute, version]
 and a follow-up test case is constructed by changing the value of the following parameters [entity:mix]
 then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR51 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, entity, callback, explicit]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [limit:50, version:2]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR20 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [term, country:IT, media, attribute, callback, limit, version]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AD]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AE]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AF]
+and a follow-up test case is constructed by changing the value of the following parameters [country:AG]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of ITunes (Search)
+the following metamorphic relation should hold
+MR21 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [term, country, media, attribute, callback, limit, version]
+and a follow-up test case is constructed by adding the following parameters [lang:en_us]
+and a follow-up test case is constructed by adding the following parameters [explicit:Yes]
+then the source and the follow-up output(s) should have the same items in the same order.
 

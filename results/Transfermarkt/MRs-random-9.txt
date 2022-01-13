@@ -1,0 +1,695 @@
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR55 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, countryOfBirth:Spain, monthBirth, yearBirth, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR64 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship, countryOfBirth, confederation:UEFA, yearBirth, minAge, maxAge, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:OFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:FIFA]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR14 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, secondCitizenship, confederation:FIFA, yearBirth, minAge, maxYear, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR15 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, secondCitizenship, confederation:FIFA, yearBirth, minAge, maxYear, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR50 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship:Spain, countryOfBirth, dayBirth, yearBirth, minAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:American Samoa]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:American Virgin Islands]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR39 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [secondCitizenship:Spain, countryOfBirth, dayBirth, monthBirth, minAge, maxAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR45 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship, secondCitizenship, countryOfBirth, confederation:FIFA, dayBirth, monthBirth, minAge, maxAge, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:OFC]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR70 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, secondCitizenship, countryOfBirth, confederation:FIFA, monthBirth, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:OFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:UEFA]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR13 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, secondCitizenship:Argentina, countryOfBirth, minAge, maxAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR9 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, confederation:UEFA, dayBirth, monthBirth, minAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:OFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:FIFA]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR72 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, secondCitizenship, countryOfBirth, confederation:FIFA, monthBirth, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR23 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship:Germany, secondCitizenship, confederation, dayBirth, yearBirth, minYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR12 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, secondCitizenship, countryOfBirth:Spain, minAge, maxAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR41 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, secondCitizenship, countryOfBirth:Spain, confederation, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:American Samoa]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:American Virgin Islands]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR11 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, secondCitizenship, countryOfBirth:Spain, minAge, maxAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:American Samoa]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:American Virgin Islands]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR24 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship:Germany, secondCitizenship, confederation, dayBirth, yearBirth, minYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR51 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [citizenship:Germany, secondCitizenship, countryOfBirth, confederation, monthBirth, yearBirth, minAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:American Samoa]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR68 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship, confederation:FIFA, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR54 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [citizenship, secondCitizenship, countryOfBirth, confederation:UEFA, monthBirth, yearBirth, minAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR62 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship, countryOfBirth:Germany, confederation, yearBirth, minAge, maxAge, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR16 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, secondCitizenship:Spain, confederation, yearBirth, minAge, maxYear, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Samoa]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Virgin Islands]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR35 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, secondCitizenship:Spain, countryOfBirth, confederation, monthBirth, yearBirth, maxAge, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR10 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, secondCitizenship:Argentina, countryOfBirth, minAge, maxAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR48 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship:Spain, countryOfBirth, dayBirth, yearBirth, minAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR31 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship:Germany, countryOfBirth, dayBirth, monthBirth, maxAge, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:American Samoa]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR66 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship:Spain, secondCitizenship, confederation, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR0 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship, secondCitizenship:Spain, countryOfBirth, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Samoa]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR60 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, secondCitizenship:Argentina, dayBirth, yearBirth, maxAge, minYear, maxYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Samoa]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR40 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, secondCitizenship:Argentina, countryOfBirth, confederation, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Samoa]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Virgin Islands]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR1 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship, secondCitizenship, countryOfBirth:Germany, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR53 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [citizenship, secondCitizenship, countryOfBirth, confederation:UEFA, monthBirth, yearBirth, minAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR34 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, secondCitizenship:Spain, countryOfBirth, confederation, monthBirth, yearBirth, maxAge, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR3 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship, secondCitizenship, countryOfBirth:Germany, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR47 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, countryOfBirth:Germany, dayBirth, yearBirth, minAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR19 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [citizenship:Spain, countryOfBirth, confederation, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR26 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, confederation:FIFA, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:OFC]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR44 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship, secondCitizenship:Spain, countryOfBirth, confederation, dayBirth, monthBirth, minAge, maxAge, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR33 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, secondCitizenship:Spain, countryOfBirth, confederation, monthBirth, yearBirth, maxAge, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Samoa]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Virgin Islands]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR8 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, confederation:UEFA, dayBirth, monthBirth, minAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR58 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, secondCitizenship:Argentina, dayBirth, yearBirth, maxAge, minYear, maxYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR43 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship:Spain, secondCitizenship, countryOfBirth, confederation, dayBirth, monthBirth, minAge, maxAge, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR36 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [secondCitizenship:Spain, countryOfBirth, dayBirth, monthBirth, minAge, maxAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR37 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [secondCitizenship, countryOfBirth:Germany, dayBirth, monthBirth, minAge, maxAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR71 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, secondCitizenship:Spain, countryOfBirth, confederation, monthBirth, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR25 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship, secondCitizenship, confederation:UEFA, dayBirth, yearBirth, minYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR5 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship:Argentina, countryOfBirth, confederation, dayBirth, monthBirth, yearBirth, maxAge, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR30 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, countryOfBirth:Spain, dayBirth, monthBirth, maxAge, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:American Samoa]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR7 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship, countryOfBirth, confederation:FIFA, dayBirth, monthBirth, yearBirth, maxAge, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:OFC]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR49 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, countryOfBirth:Germany, dayBirth, yearBirth, minAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:American Samoa]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR32 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, secondCitizenship, countryOfBirth:Germany, confederation, monthBirth, yearBirth, maxAge, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR28 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, confederation:FIFA, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR61 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship, countryOfBirth, confederation:UEFA, yearBirth, minAge, maxAge, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR57 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship:Spain, countryOfBirth, monthBirth, yearBirth, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:American Samoa]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:American Virgin Islands]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR29 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, countryOfBirth:Spain, dayBirth, monthBirth, maxAge, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR63 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship, countryOfBirth:Germany, confederation, yearBirth, minAge, maxAge, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR27 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, confederation:FIFA, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR56 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship:Spain, countryOfBirth, monthBirth, yearBirth, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR38 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [secondCitizenship:Spain, countryOfBirth, dayBirth, monthBirth, minAge, maxAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:American Samoa]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR2 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship, secondCitizenship, countryOfBirth:Germany, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR6 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship, countryOfBirth:Spain, confederation, dayBirth, monthBirth, yearBirth, maxAge, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR52 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [citizenship, secondCitizenship, countryOfBirth, confederation:UEFA, monthBirth, yearBirth, minAge, minYear, maxYear, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR20 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [citizenship, countryOfBirth:Germany, confederation, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR67 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship:Spain, secondCitizenship, confederation, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR18 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [citizenship, countryOfBirth:Germany, confederation, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR59 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, secondCitizenship:Argentina, dayBirth, yearBirth, maxAge, minYear, maxYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR4 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship, countryOfBirth:Spain, confederation, dayBirth, monthBirth, yearBirth, maxAge, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:American Samoa]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR69 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship, secondCitizenship, countryOfBirth:Spain, confederation, monthBirth, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR65 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, citizenship, secondCitizenship:Argentina, confederation, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR46 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship, secondCitizenship, countryOfBirth:Spain, confederation, dayBirth, monthBirth, minAge, maxAge, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [countryOfBirth:Albania]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR21 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [citizenship, countryOfBirth, confederation:UEFA, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, minHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:AFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONCACAF]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:CONMEBOL]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:OFC]
+and a follow-up test case is constructed by changing the value of the following parameters [confederation:FIFA]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR17 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, exactSearch, citizenship:Spain, secondCitizenship, confederation, yearBirth, minAge, maxYear, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR22 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [exactSearch, citizenship:Germany, secondCitizenship, confederation, dayBirth, yearBirth, minYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:Algeria]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:American Samoa]
+and a follow-up test case is constructed by changing the value of the following parameters [citizenship:American Virgin Islands]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Transfermarkt (PersonalData)
+the following metamorphic relation should hold
+MR42 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [placeOfBirth, secondCitizenship:Argentina, countryOfBirth, confederation, dayBirth, monthBirth, yearBirth, minAge, maxAge, minYear, maxYear, minHeight, maxHeight, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Haiti]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Afghanistan]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Albania]
+and a follow-up test case is constructed by changing the value of the following parameters [secondCitizenship:Algeria]
+then the source and the follow-up output(s) should be disjoint.
+

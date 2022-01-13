@@ -22,16 +22,16 @@ import isa.util.TestCaseReader;
 public class main {
 
 	// IMDb
-//	static String sutName = "IMDb";
-//	static String featureId = "SearchTitle";
+	static String sutName = "IMDb";
+	static String featureId = "SearchTitle";
 	
 	// Prestashop
 	//static String sutName = "Prestashop";
 	//static String featureId = "ListOrders";
 	
 	// SkyScanner
-	static String sutName = "SkyScanner";
-	static String featureId = "searchFlights";
+//	static String sutName = "SkyScanner";
+//	static String featureId = "searchFlights";
 	
 	// YouTube Mock
 	//static String sutName = "Bikewise";
@@ -76,7 +76,7 @@ public class main {
 	static int searchStrengh = 1;				// For each MRP, this factor determines the number of MR generation tries (searchStrength * number of relevant parameters)
 	static int maxMRsPerTestCase = -1;			// Maximum number of MRs of each type generated for each source test case.
 	static int maxFutcs = 6;					// Maximum number of follow-up test cases
-	static int numExecutions = 2;
+	static int numExecutions = 10;
 	static long seed = 1;
 	
 	public static void main(String[] args) {

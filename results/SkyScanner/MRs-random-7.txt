@@ -1,0 +1,130 @@
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR3 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, depart, cabin_class, adults, children]
+and a follow-up test case is constructed by adding the following parameters [non_stop_flights_only]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR11 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, to_nearby_airports, depart, cabin_class, adults, children]
+and a follow-up test case is constructed by adding the following parameters [non_stop_flights_only]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR2 (DISJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, to_nearby_airports, depart, return, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by removing the following parameters [to_nearby_airports]
+and a follow-up test case is constructed by removing the following parameters [from_nearby_airports]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR0 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, to_nearby_airports, depart, return, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by removing the following parameters [non_stop_flights_only]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR7 (DISJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, to_nearby_airports, depart, return, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by removing the following parameters [to_nearby_airports]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR6 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, to_nearby_airports, depart, return, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by removing the following parameters [non_stop_flights_only]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR4 (DISJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, depart, cabin_class, adults, children]
+and a follow-up test case is constructed by removing the following parameters [from_nearby_airports]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR12 (DISJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, to_nearby_airports, depart, cabin_class, adults, children]
+and a follow-up test case is constructed by removing the following parameters [from_nearby_airports, to_nearby_airports]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR8 (DISJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [trip_type, from, to, to_nearby_airports, depart, return, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by adding the following parameters [from_nearby_airports]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR16 (DISJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, to_nearby_airports, depart, cabin_class, adults, children]
+and a follow-up test case is constructed by removing the following parameters [from_nearby_airports]
+and a follow-up test case is constructed by removing the following parameters [to_nearby_airports]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR14 (DISJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [trip_type, from, to, depart, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by adding the following parameters [from_nearby_airports]
+and a follow-up test case is constructed by adding the following parameters [to_nearby_airports]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR9 (CONJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [trip_type, from, to, depart, return, cabin_class, adults, children]
+and a follow-up test case is constructed by adding the following parameters [non_stop_flights_only]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR13 (CONJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, depart, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by removing the following parameters [non_stop_flights_only]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR10 (DISJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [trip_type, from, to, depart, return, cabin_class, adults, children]
+and a follow-up test case is constructed by adding the following parameters [from_nearby_airports, to_nearby_airports]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR15 (DISJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [trip_type, from, to, depart, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by adding the following parameters [from_nearby_airports, to_nearby_airports]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR1 (DISJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, to_nearby_airports, depart, return, cabin_class, adults, children, non_stop_flights_only]
+and a follow-up test case is constructed by removing the following parameters [from_nearby_airports, to_nearby_airports]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR5 (DISJUNCTIVE_EXTEND):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, depart, cabin_class, adults, children]
+and a follow-up test case is constructed by adding the following parameters [to_nearby_airports]
+then the follow-up output(s) should be a (non-strict) superset of the source test output.
+
+In the domain of SkyScanner (searchFlights)
+the following metamorphic relation should hold
+MR17 (DISJUNCTIVE_CONTRACT):
+if a source test case is run with the inputs [trip_type, from, to, from_nearby_airports, to_nearby_airports, depart, cabin_class, adults, children]
+and a follow-up test case is constructed by removing the following parameters [to_nearby_airports]
+and a follow-up test case is constructed by removing the following parameters [from_nearby_airports]
+then the follow-up output(s) should be a (non-strict) subset of the source test output.
+

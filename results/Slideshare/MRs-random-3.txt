@@ -1,144 +1,36 @@
 In the domain of Slideshare (Explore)
 the following metamorphic relation should hold
-MR1 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, uploadDate, language]
-and a follow-up test case is constructed by removing the following parameters [language, uploadDate]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR0 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, uploadDate, language]
-and a follow-up test case is constructed by removing the following parameters [uploadDate]
-and a follow-up test case is constructed by removing the following parameters [language]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR20 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, uploadDate, fileTypes]
-and a follow-up test case is constructed by removing the following parameters [uploadDate]
-and a follow-up test case is constructed by removing the following parameters [fileTypes]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR12 (CONJUNCTIVE_EXTEND):
-if a source test case is run with the inputs [search]
-and a follow-up test case is constructed by adding the following parameters [language]
-and a follow-up test case is constructed by adding the following parameters [uploadDate]
-and a follow-up test case is constructed by adding the following parameters [fileTypes]
-then the follow-up output(s) should be a (non-strict) subset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR21 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, uploadDate, fileTypes]
-and a follow-up test case is constructed by removing the following parameters [fileTypes, uploadDate]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR10 (CONJUNCTIVE_EXTEND):
-if a source test case is run with the inputs [search]
-and a follow-up test case is constructed by adding the following parameters [fileTypes, uploadDate]
-and a follow-up test case is constructed by adding the following parameters [language]
-then the follow-up output(s) should be a (non-strict) subset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR18 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, uploadDate, fileTypes, language]
-and a follow-up test case is constructed by removing the following parameters [language, uploadDate]
-and a follow-up test case is constructed by removing the following parameters [fileTypes]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR2 (CONJUNCTIVE_EXTEND):
-if a source test case is run with the inputs [search, uploadDate, language]
-and a follow-up test case is constructed by adding the following parameters [fileTypes]
-then the follow-up output(s) should be a (non-strict) subset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR8 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [search, fileTypes, language:Spanish]
+MR1 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [search, fileTypes, language:Spanish, limit]
 and a follow-up test case is constructed by changing the value of the following parameters [language:English]
 and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Slideshare (Explore)
+the following metamorphic relation should hold
+MR0 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [search, uploadDate, language:English, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Spanish]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
+and a follow-up test case is constructed by changing the value of the following parameters [language:French]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Italian]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Dutch]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of Slideshare (Explore)
+the following metamorphic relation should hold
+MR6 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [search, uploadDate, fileTypes, language:Spanish, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [language:English]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
+and a follow-up test case is constructed by changing the value of the following parameters [language:French]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Italian]
 then the source and the follow-up output(s) should be disjoint.
 
 In the domain of Slideshare (Explore)
 the following metamorphic relation should hold
 MR3 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [search, uploadDate, language:English]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Spanish]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
-and a follow-up test case is constructed by changing the value of the following parameters [language:French]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Italian]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Dutch]
-then the source and the follow-up output(s) should be disjoint.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR5 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, fileTypes, language]
-and a follow-up test case is constructed by removing the following parameters [fileTypes, language]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR24 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [search, uploadDate, fileTypes, language:Spanish]
-and a follow-up test case is constructed by changing the value of the following parameters [language:English]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
-and a follow-up test case is constructed by changing the value of the following parameters [language:French]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Italian]
-then the source and the follow-up output(s) should be disjoint.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR6 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, fileTypes, language]
-and a follow-up test case is constructed by removing the following parameters [fileTypes]
-and a follow-up test case is constructed by removing the following parameters [language]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR19 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [search, uploadDate, fileTypes, language:English]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Spanish]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
-and a follow-up test case is constructed by changing the value of the following parameters [language:French]
-then the source and the follow-up output(s) should be disjoint.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR7 (CONJUNCTIVE_EXTEND):
-if a source test case is run with the inputs [search, fileTypes, language]
-and a follow-up test case is constructed by adding the following parameters [uploadDate]
-then the follow-up output(s) should be a (non-strict) subset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR11 (CONJUNCTIVE_EXTEND):
-if a source test case is run with the inputs [search]
-and a follow-up test case is constructed by adding the following parameters [fileTypes]
-and a follow-up test case is constructed by adding the following parameters [language, uploadDate]
-then the follow-up output(s) should be a (non-strict) subset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR14 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, uploadDate, fileTypes, language]
-and a follow-up test case is constructed by removing the following parameters [fileTypes, language, uploadDate]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR16 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [search, uploadDate, fileTypes, language:Spanish]
+if a source test case is run with the inputs [search, uploadDate, fileTypes, language:Spanish, limit]
 and a follow-up test case is constructed by changing the value of the following parameters [language:English]
 and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
 and a follow-up test case is constructed by changing the value of the following parameters [language:French]
@@ -148,68 +40,33 @@ then the source and the follow-up output(s) should be disjoint.
 
 In the domain of Slideshare (Explore)
 the following metamorphic relation should hold
-MR22 (CONJUNCTIVE_EXTEND):
-if a source test case is run with the inputs [search, uploadDate, fileTypes]
-and a follow-up test case is constructed by adding the following parameters [language]
-then the follow-up output(s) should be a (non-strict) subset of the source test output.
+MR2 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [search, fileTypes, language:English, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Spanish]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
+and a follow-up test case is constructed by changing the value of the following parameters [language:French]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Italian]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Dutch]
+then the source and the follow-up output(s) should be disjoint.
 
 In the domain of Slideshare (Explore)
 the following metamorphic relation should hold
-MR15 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, uploadDate, fileTypes, language]
-and a follow-up test case is constructed by removing the following parameters [fileTypes, uploadDate]
-and a follow-up test case is constructed by removing the following parameters [language]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
+MR5 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [search, uploadDate, fileTypes, language:English, limit]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Spanish]
+and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
+and a follow-up test case is constructed by changing the value of the following parameters [language:French]
+then the source and the follow-up output(s) should be disjoint.
 
 In the domain of Slideshare (Explore)
 the following metamorphic relation should hold
-MR23 (CONJUNCTIVE_CONTRACT):
-if a source test case is run with the inputs [search, uploadDate, fileTypes, language]
-and a follow-up test case is constructed by removing the following parameters [uploadDate]
-and a follow-up test case is constructed by removing the following parameters [fileTypes]
-and a follow-up test case is constructed by removing the following parameters [language]
-then the follow-up output(s) should be a (non-strict) superset of the source test output.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR4 (COMPLETE_EXTEND):
-if a source test case is run with the inputs [search, uploadDate, language]
-and a follow-up test case is constructed by adding the following parameters [fileTypes:presentations]
-and a follow-up test case is constructed by changing the value of the following parameters [fileTypes:documents]
-and a follow-up test case is constructed by changing the value of the following parameters [fileTypes:videos]
-and a follow-up test case is constructed by changing the value of the following parameters [fileTypes:infographics]
-then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR13 (COMPLETE_EXTEND):
-if a source test case is run with the inputs [search]
-and a follow-up test case is constructed by adding the following parameters [fileTypes:presentations]
-and a follow-up test case is constructed by changing the value of the following parameters [fileTypes:documents]
-and a follow-up test case is constructed by changing the value of the following parameters [fileTypes:videos]
-and a follow-up test case is constructed by changing the value of the following parameters [fileTypes:infographics]
-then the union of the follow-up outputs should have the same items as the source output, regardless of their order.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR17 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [search, uploadDate, language:Spanish]
+MR4 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [search, uploadDate, language:Spanish, limit]
 and a follow-up test case is constructed by changing the value of the following parameters [language:English]
 and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
 and a follow-up test case is constructed by changing the value of the following parameters [language:French]
 and a follow-up test case is constructed by changing the value of the following parameters [language:Italian]
 and a follow-up test case is constructed by changing the value of the following parameters [language:Dutch]
 and a follow-up test case is constructed by changing the value of the following parameters [language:German]
-then the source and the follow-up output(s) should be disjoint.
-
-In the domain of Slideshare (Explore)
-the following metamorphic relation should hold
-MR9 (DISJOINT_EXTEND):
-if a source test case is run with the inputs [search, fileTypes, language:English]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Spanish]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Portuguese]
-and a follow-up test case is constructed by changing the value of the following parameters [language:French]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Italian]
-and a follow-up test case is constructed by changing the value of the following parameters [language:Dutch]
 then the source and the follow-up output(s) should be disjoint.
 
