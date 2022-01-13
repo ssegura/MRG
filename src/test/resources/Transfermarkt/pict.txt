@@ -14,3 +14,4 @@ minYear: 1991, 1987,
 maxYear: 2000, 2003,
 minHeight: 160, 170,
 maxHeight: 180, 190,
+limit: 250

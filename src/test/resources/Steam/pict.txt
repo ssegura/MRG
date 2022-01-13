@@ -2,7 +2,7 @@
 term: the, simulator,
 sortBy: relevance, lowestPrice,
 price: under40, free,
-specialOffers: showAll, showOnlySpecialOffers
+specialOffers: showOnlySpecialOffers,
 tag: indie, adventure,
 selectedTypes: games, downloableContent,
 numberOfPlayers: singleplayer, multiplayer,

@@ -353,7 +353,7 @@ features:
         enum:
            - en_us
            - ja_jp
-      - name: version
+      - name: version # This parameter affects the format of the responses, so it should not be used
         description: "The search result key version you want to receive back from your search. The default is 2."
         type: string
         required: false

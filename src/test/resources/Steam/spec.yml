@@ -11,6 +11,7 @@ features:
      description: Sort results by different criteria
      type: string
      required: false
+     default: relevance
      enum:
         - relevance
         - releaseDate   # TODO: Conjunctive
@@ -18,7 +19,7 @@ features:
         - lowestPrice
         - highestPrice
         - userReviews   # TODO: Conjunctive
-   - name: price               # Conjunctive, Complete
+   - name: price               # Conjunctive
      description: Filter the results by price
      type: string
      required: false
@@ -39,10 +40,8 @@ features:
    - name: specialOffers      # Conjunctive
      description: Show only special offers
      type: string
-     required: true     # TODO: Reconsider
-     default: showAll
+     required: false
      enum:
-        - showAll
         - showOnlySpecialOffers
    - name: tag             # Conjunctive (multiple tags per product)
      description: Narrow by tag
@@ -212,6 +211,4 @@ features:
       - parameter: selectedTypes
       complete_filters:
       - parameter: selectedTypes
-        all_value: empty
-      - parameter: price
         all_value: empty

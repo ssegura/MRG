@@ -26,7 +26,7 @@ features:
       - name: projectsWeLove        # conjunctive
         description: "Show only projects labeled as 'Project We Love'"
         type: string
-        required: true
+        required: false
         default: showAllProjects
         enum:
           - showAllProjects
@@ -55,7 +55,7 @@ features:
       - name: recommendedForMe     # Same situation as in projectsWeLove, conjunctive
         description: show only projects recommended for me
         type: string
-        required: true
+        required: false
         default: showAllProjects
         enum:
           - showAllProjects

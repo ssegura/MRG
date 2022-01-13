@@ -816,52 +816,59 @@ features:
    - name: yearBirth
      description: Year of Birth
      type: integer
-     # min: 1850
-     # max: 2020
+     # min: 1831
+     # max: 2021
      required: false
    - name: minAge
      description: Minimum age
-     default: 0
+#     default: 0
      type: integer
-     required: false
+     required: true
      # min: 0
      # max: 150
    - name: maxAge
      description: Maximum age
-     default: 150
+#     default: 150
      type: integer
-     required: false
+     required: true
    - name: minYear
      description: Minimum year
-     default: 1850
+#     default: 1850
      type: integer
-     required: false
+     required: true
      # min: 1850
      # max: 2006
    - name: maxYear
      description: Maximum year
-     default: 2006
+#     default: 2006
      type: integer
-     required: false
+     required: true
        # min: 1850
        # max: 2006
    - name: minHeight
      description: Minimum Height
-     default: 0
+#     default: 0
      type: integer
-     required: false
+     required: true
      # min: 0
      # max: 220
    - name: maxHeight
      description: Maximum Height
-     default: 220
+#     default: 220
      type: integer
-     required: false
+     required: true
        # min: 0
        # max: 220
+   - name: limit
+     description: Limit
+     type: integer
+     required: true
+     enum:
+       - 250
 
 # MT configuration
    configuration:
+      limit_parameter: limit
       conjunctive_filters:
       - placeOfBirth
       - exactSearch

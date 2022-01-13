@@ -271,9 +271,9 @@ features:
    -  constraint: videoSyndicated requires type=video
    -  constraint: videoType requires type=video
 
-   -  constraint: channelType requires type=channel
-
-   -  constraint: location requires type=video
+#   -  constraint: channelType requires type=channel # Unspecified dependency
+#
+#   -  constraint: location requires type=video # Unspecified dependency
 
    configuration:
       ordering_parameters:

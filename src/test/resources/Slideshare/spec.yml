@@ -22,7 +22,7 @@ features:
         enum:
           - presentations
           - documents
-          - videos
+#          - videos # Not available anymore
           - infographics
       - name: language
         description: Filter by language
@@ -88,6 +88,12 @@ features:
           - Urdu
           - Vietnamese
     # TODO: Add limit
+      - name: limit
+        description: Limit results
+        type: string
+        required: true
+        enum:
+          - 10000
    configuration:
       conjunctive_filters:
         - uploadDate
@@ -100,7 +106,5 @@ features:
         - parameter: language
           all_value: empty
 
-      disjoint_filters:
-        - parameter: language
-
         # TODO: LIMIT PARAMETER
+      limit_parameter: limit
