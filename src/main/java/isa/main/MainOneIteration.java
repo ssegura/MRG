@@ -18,7 +18,7 @@ import isa.util.MRStats;
 import isa.util.MRWriter;
 import isa.util.TestCaseReader;
 
-public class mainOneIteration {
+public class MainOneIteration {
 
 
 //	// Travel API

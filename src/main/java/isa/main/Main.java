@@ -19,23 +19,19 @@ import isa.util.MRStats;
 import isa.util.MRWriter;
 import isa.util.TestCaseReader;
 
-public class main {
+public class Main {
 
 	// IMDb
 	static String sutName = "IMDb";
 	static String featureId = "SearchTitle";
 	
 	// Prestashop
-	//static String sutName = "Prestashop";
-	//static String featureId = "ListOrders";
+//	static String sutName = "Prestashop";
+//	static String featureId = "ListOrders";
 	
 	// SkyScanner
 //	static String sutName = "SkyScanner";
 //	static String featureId = "searchFlights";
-	
-	// YouTube Mock
-	//static String sutName = "Bikewise";
-	//static String featureId = "GetIncidents";
 	
 	// YouTube
 //	static String sutName = "YouTube";
@@ -49,7 +45,6 @@ public class main {
 //	static String sutName = "Transfermarkt";
 //	static String featureId = "PersonalData";
 
-
 //	// Steam
 //	static String sutName = "Steam";
 //	static String featureId = "SearchTheStore";
@@ -58,18 +53,6 @@ public class main {
 //	static String sutName = "ITunes";
 //	static String featureId = "Search";
 
-	// Slideshare
-//	static String sutName = "Slideshare";
-//	static String featureId = "Explore";
-
-	// CommentsAPI
-	//static String sutName = "CommentsAPI";
-	//static String featureId = "GetAllComments";
-	
-	// Travel API
-	//static String sutName = "TravelAPI";
-	//static String featureId = "GetUserTrips";
-	
 	
 	static String inputDirPath = "src/test/resources/";
 	static String outputDirPath = "results/";
