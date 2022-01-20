@@ -522,4 +522,20 @@ features:
         - parameter: goal            # TODO: CHECK inconsistency
         - parameter: raised          # TODO: CHECK inconsistency
         - parameter: category        # TODO: Difference of two
+          values:
+            - "Art"
+            - "Comics"
+            - "Crafts"
+            - "Dance"
+            - "Design"
+            - "Fashion"
+            - "FilmAndVideo"
+            - "Food"
+            - "Games"
+            - "Journalism"
+            - "Music"
+            - "Photography"
+            - "Publishing"
+            - "Technology"
+            - "Theater"
         - parameter: subcategory
