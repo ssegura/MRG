@@ -1,7 +1,0 @@
-MR;type;STC_id;STC_n_parameters;number_of_FUTCs;local_distance;STC;FUTC_1;FUTC_2;FUTC_3;FUTC_4;FUTC_5;FUTC_6
-MR3;DISJOINT_EXTEND;Test-05;5;6;6;[search, uploadDate, fileTypes, language:Spanish, limit];[language:English];[language:Portuguese];[language:French];[language:Italian];[language:Dutch];[language:German]
-MR0;DISJOINT_EXTEND;Test-01;4;1;1;[search, uploadDate, language:English, limit];[language:Spanish];[];[];[];[];[]
-MR1;DISJOINT_EXTEND;Test-02;4;1;1;[search, fileTypes, language:Spanish, limit];[language:English];[];[];[];[];[]
-MR5;DISJOINT_EXTEND;Test-07;5;5;5;[search, uploadDate, fileTypes, language:English, limit];[language:Spanish];[language:Portuguese];[language:French];[language:Italian];[language:Dutch];[]
-MR4;DISJOINT_EXTEND;Test-06;4;1;1;[search, uploadDate, language:Spanish, limit];[language:English];[];[];[];[];[]
-MR2;DISJOINT_EXTEND;Test-03;4;2;2;[search, fileTypes, language:English, limit];[language:Spanish];[language:Portuguese];[];[];[];[]

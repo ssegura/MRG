@@ -1,9 +1,0 @@
-# Parameters
-name:           Concert; (100)
-creator:        1; 2; 3; (10)
-area:           37.4, -6, 100000; 36.6, -6.2, 10000000; 38, -122, 99999; (10)
-tag:            none; beach; food; music; (10)
-day:            -1; 0; 5; 5000 (10); (10)
-date_minimum:   2010-04-12 (10); 2017-04-09; 2019-03-03; 2020-05-05; (10)
-type:           meeting; holidays; unspecified; all (10); (10)
-order:          date; date+; date-; creator; creator+; creator-;

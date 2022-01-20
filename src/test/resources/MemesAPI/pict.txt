@@ -1,5 +1,0 @@
-# Parameters
-reverse:        false, true,
-upperlimit:     11,
-lowerlimit:     4,
-category:       Sport, All,
