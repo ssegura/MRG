@@ -1,0 +1,1966 @@
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR268 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, order:relevance]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR63 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType:completed, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR48 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, eventType, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR223 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, onBehalfOfContentOwner, order, regionCode, relevanceLanguage, safeSearch, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:playlist]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR161 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any, videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR111 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration:short, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR73 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR261 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense:creativeCommon, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR239 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration:long, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:short]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR181 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, channelId, channelType, eventType:upcoming, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR24 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, order, publishedBefore, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [videoCaption:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR71 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration:short, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR136 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense:youtube, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR198 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoCaption:any]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, forDeveloper:false, videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR253 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition:high, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:standard]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR200 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration:short, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR162 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR149 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, location, locationRadius, maxResults, order, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoDefinition, videoDimension, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, forDeveloper:false, safeSearch:moderate, videoDuration:any, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR49 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense:creativeCommon]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR210 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, order, pageToken, regionCode, relevanceLanguage, type]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR15 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR137 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration:short, videoEmbeddable, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR222 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, channelType, onBehalfOfContentOwner, order, q, regionCode, relevanceLanguage, safeSearch, type]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR236 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR247 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5, order:relevance]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR36 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, maxResults, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoLicense:any]
+and a follow-up test case is constructed by adding the following parameters [order:relevance]
+and a follow-up test case is constructed by adding the following parameters [safeSearch:moderate]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR38 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption:none, videoDefinition, videoDimension, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR135 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, order, pageToken, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, safeSearch:moderate, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR82 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, onBehalfOfContentOwner, order, q, regionCode, safeSearch, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR117 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, location, locationRadius, maxResults, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR244 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:relevance, videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR194 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, safeSearch, type, videoDefinition, videoDimension, videoDuration:long, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:short]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR226 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition:standard, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:high]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR260 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR168 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, regionCode, type, videoCaption:closedCaption]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR202 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, safeSearch, topicId, type, videoCaption, videoDefinition:standard, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:high]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR68 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoSyndicated, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR84 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, order, pageToken, safeSearch, type, videoCategoryId, videoDefinition:high, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:standard]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR187 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, relevanceLanguage, type, videoCategoryId, videoDefinition, videoDimension:2d, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR7 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition:standard, videoDimension, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:high]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR89 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, type, videoCaption:closedCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR100 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType:completed, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR95 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, safeSearch:moderate]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR231 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR108 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType:upcoming, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR59 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, maxResults, onBehalfOfContentOwner, order, pageToken, publishedBefore, publishedAfter, regionCode, relevanceLanguage, safeSearch, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:playlist]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR263 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5, videoCaption:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR182 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, channelId, channelType, eventType:upcoming, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR249 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, channelType, eventType:live, location, locationRadius, maxResults, onBehalfOfContentOwner, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR224 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, onBehalfOfContentOwner, order, regionCode, relevanceLanguage, safeSearch, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR102 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption, videoDefinition:standard, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:high]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR39 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:upcoming, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR218 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR129 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, order, pageToken, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension:2d, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR37 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, maxResults, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:relevance, safeSearch:moderate, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR88 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, order, pageToken, safeSearch, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoCaption:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR208 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, order, pageToken, regionCode, relevanceLanguage, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR173 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration:medium, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR130 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType:upcoming, location, locationRadius, order, pageToken, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR8 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoLicense:creativeCommon, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR34 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, maxResults, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:relevance, videoDuration:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR180 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forMine, channelType, eventType:live, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR267 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, order:relevance, videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR225 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoLicense:youtube, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR112 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration, videoLicense, videoSyndicated, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR124 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR27 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, maxResults, onBehalfOfContentOwner, order, pageToken, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption:closedCaption, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR41 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:upcoming, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR220 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any, videoEmbeddable:any, videoLicense:any]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR0 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, onBehalfOfContentOwner, regionCode, safeSearch, type, videoDuration]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR33 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, maxResults, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, order:relevance, videoLicense:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR238 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forMine, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, publishedBefore, publishedAfter, regionCode, relevanceLanguage, safeSearch, type, videoCaption:closedCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR216 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoEmbeddable:any, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR65 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR142 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR109 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration, videoLicense:creativeCommon, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR26 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, maxResults, onBehalfOfContentOwner, order, pageToken, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDuration, videoEmbeddable, videoLicense:youtube, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR23 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, order, publishedBefore, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5, videoType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR90 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:live, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR235 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, videoEmbeddable:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR240 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration:long, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR270 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forMine, channelId, channelType, eventType:upcoming, location, locationRadius, maxResults, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR138 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:live, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR58 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, order, pageToken, q, relevanceLanguage, topicId, type]
+and a follow-up test case is constructed by adding the following parameters [safeSearch:moderate]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR183 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, channelId, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption:closedCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR221 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5, videoEmbeddable:any, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR10 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension:3d, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:2d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR230 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR153 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR201 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType:upcoming, location, locationRadius, maxResults, publishedBefore, q, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR9 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType:completed, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR43 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR70 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension:3d, videoDuration, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:2d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR123 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR213 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:completed, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR177 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR57 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, order, pageToken, q, relevanceLanguage, topicId, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR241 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense:creativeCommon, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR31 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, maxResults, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoCategoryId, videoDefinition:standard, videoDimension, videoEmbeddable, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:high]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR67 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition:high, videoDimension, videoDuration, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:standard]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR50 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDimension, videoDuration:short, videoEmbeddable, videoLicense]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR44 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, eventType, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense:youtube, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR209 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, order, pageToken, regionCode, relevanceLanguage, type]
+and a follow-up test case is constructed by adding the following parameters [safeSearch:moderate]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR18 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR211 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR64 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration:short, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR20 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType:completed, order, publishedBefore, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR188 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:live, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, relevanceLanguage, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR196 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR119 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoLicense:creativeCommon, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR150 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, location, locationRadius, maxResults, order, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoDefinition, videoDimension, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDuration:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR40 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoSyndicated, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR159 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoDimension:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR266 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoEmbeddable, videoLicense:youtube, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR127 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, maxResults, onBehalfOfContentOwner, regionCode, safeSearch, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:playlist]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR106 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+and a follow-up test case is constructed by adding the following parameters [videoType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR207 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, order, pageToken, regionCode, relevanceLanguage, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:channel]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR160 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoDuration:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR11 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDuration:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR166 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, maxResults, onBehalfOfContentOwner, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, forDeveloper:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR30 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, maxResults, onBehalfOfContentOwner, order, pageToken, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR178 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, location, locationRadius, onBehalfOfContentOwner, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:channel]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR185 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:live, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, relevanceLanguage, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR14 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, topicId, type, videoCaption, videoCategoryId, videoDefinition:high, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:standard]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR204 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense:youtube, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR12 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration:long, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR1 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, onBehalfOfContentOwner, regionCode, safeSearch, type, videoDuration]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5, order:relevance, videoCaption:any, videoDefinition:any, videoDimension:any, videoLicense:any, videoSyndicated:any, videoType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR46 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, eventType, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration:long, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR157 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR134 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, order, pageToken, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+and a follow-up test case is constructed by adding the following parameters [safeSearch:moderate]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR22 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, order, publishedBefore, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDefinition, videoDimension, videoDuration:long, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:short]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR29 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, maxResults, onBehalfOfContentOwner, order, pageToken, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR227 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoType:movie]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:episode]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR141 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR3 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, onBehalfOfContentOwner, regionCode, safeSearch, type, videoDuration]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5, videoCaption:any, videoDefinition:any, videoDimension:any, videoSyndicated:any]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR75 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType:live, location, locationRadius, maxResults, publishedBefore, q, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR189 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, relevanceLanguage, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [safeSearch:moderate]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR35 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, maxResults, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, order:relevance, safeSearch:moderate, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR6 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType:upcoming, location, locationRadius, maxResults, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR152 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, location, locationRadius, maxResults, order, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoDefinition, videoDimension, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR16 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension:2d, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR53 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense]
+and a follow-up test case is constructed by adding the following parameters [videoCaption:any, videoSyndicated:any, videoType:any]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR186 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, relevanceLanguage, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense:creativeCommon, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR237 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR78 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:relevance]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR74 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType:live, location, locationRadius, maxResults, publishedBefore, q, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR93 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR92 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoType:movie]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:episode]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR25 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, order, publishedBefore, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR5 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType, location, locationRadius, maxResults, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption:none, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR242 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition:high, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:standard]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR184 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, relevanceLanguage, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType:movie]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:episode]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR120 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:completed, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR233 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR167 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, maxResults, onBehalfOfContentOwner, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR243 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5, videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR246 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR91 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension:3d, videoDuration, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:2d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR76 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition:standard, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:high]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR203 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension:3d, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:2d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR87 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType:upcoming, location, locationRadius, maxResults, order, pageToken, safeSearch, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR96 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR83 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, order, pageToken, safeSearch, type, videoCategoryId, videoDefinition, videoDimension, videoDuration:medium, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:short]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR190 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, relevanceLanguage, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [safeSearch:moderate, videoCaption:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR126 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR229 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption:closedCaption, videoDefinition, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR251 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType:live, location, locationRadius, maxResults, order, publishedBefore, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR205 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, channelId, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, publishedAfter, q, relevanceLanguage, safeSearch, topicId, type, videoCaption:none, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR191 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, relevanceLanguage, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoCaption:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR174 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption:closedCaption, videoCategoryId, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR215 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension:2d, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR45 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, eventType, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition:standard, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:high]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR234 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration:short, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR56 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, order, pageToken, q, relevanceLanguage, topicId, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:playlist]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR206 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, channelId, channelType, eventType:live, location, locationRadius, maxResults, onBehalfOfContentOwner, publishedAfter, q, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR264 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, maxResults:5, videoCaption:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR139 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:live, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR143 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoType:any]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR176 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR179 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, location, locationRadius, onBehalfOfContentOwner, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR217 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any, videoLicense:any]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR107 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [videoType:any]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR28 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType:live, maxResults, onBehalfOfContentOwner, order, pageToken, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR254 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR32 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, maxResults, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoEmbeddable, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR17 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType:live, location, locationRadius, maxResults, order, publishedBefore, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR19 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, safeSearch:moderate]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR47 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, eventType, location, locationRadius, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5, videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR116 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDimension:any]
+and a follow-up test case is constructed by adding the following parameters [order:relevance]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR54 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense]
+and a follow-up test case is constructed by adding the following parameters [videoCaption:any, videoSyndicated:any, videoType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR171 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forMine, channelId, channelType, eventType:upcoming, location, locationRadius, order, pageToken, publishedBefore, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR42 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR170 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forMine, channelId, channelType, eventType, location, locationRadius, order, pageToken, publishedBefore, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption:none, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR62 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType:completed, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR232 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, pageToken, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5, videoDuration:any, videoEmbeddable:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR154 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption:closedCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR21 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, order, publishedBefore, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDefinition, videoDimension, videoDuration:long, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR156 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:completed, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR164 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, maxResults, onBehalfOfContentOwner, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration:long, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:short]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR214 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration:medium, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR175 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration:medium, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:short]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR219 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5, videoLicense:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR172 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType:movie]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:episode]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR140 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoCaption:any, videoType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR255 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR192 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType:upcoming, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR97 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, maxResults, onBehalfOfContentOwner, order, pageToken, relevanceLanguage, safeSearch, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:channel]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR155 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:completed, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR79 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:relevance]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR258 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType:upcoming, location, locationRadius, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR110 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType:upcoming, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR4 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType:upcoming, location, locationRadius, maxResults, order, pageToken, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR52 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense]
+and a follow-up test case is constructed by adding the following parameters [videoCaption:any, videoDefinition:any, videoSyndicated:any, videoType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR169 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, eventType:completed, location, locationRadius, maxResults, onBehalfOfContentOwner, order, regionCode, type, videoCaption]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR144 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5, videoCaption:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR262 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoDefinition, videoDimension:3d, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:2d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR163 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, maxResults, onBehalfOfContentOwner, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType:episode]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:movie]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR13 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType:live, location, locationRadius, maxResults, order, publishedBefore, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR61 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType:movie]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:episode]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR147 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, location, locationRadius, maxResults, order, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoDefinition, videoDimension, videoEmbeddable, videoSyndicated, videoType:movie]
+and a follow-up test case is constructed by changing the value of the following parameters [videoType:episode]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR55 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR69 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, q, regionCode, relevanceLanguage, type, videoCaption:none, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR77 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension:2d, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR115 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR133 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, order, pageToken, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [safeSearch:moderate]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR101 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration:medium, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR212 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:completed, location, locationRadius, order, pageToken, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR245 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, location, locationRadius, onBehalfOfContentOwner, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoDefinition, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [order:relevance]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+and a follow-up test case is constructed by adding the following parameters [videoDimension:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR51 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCategoryId, videoDimension:2d, videoDuration, videoEmbeddable, videoLicense]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR193 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoLicense:creativeCommon, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR128 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, maxResults, onBehalfOfContentOwner, regionCode, safeSearch, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR148 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, location, locationRadius, maxResults, order, publishedBefore, publishedAfter, regionCode, type, videoCaption:none, videoDefinition, videoDimension, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR104 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense:youtube, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR145 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, location, locationRadius, maxResults, order, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoDefinition:high, videoDimension, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDefinition:standard]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR80 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, location, locationRadius, maxResults, publishedBefore, q, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, order:relevance]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR86 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType:upcoming, location, locationRadius, maxResults, order, pageToken, safeSearch, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR257 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, location, locationRadius, maxResults, order, pageToken, regionCode, safeSearch, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:channel]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR252 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType, location, locationRadius, maxResults, order, publishedBefore, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension:2d, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR158 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR81 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, location, locationRadius, onBehalfOfContentOwner, order, q, regionCode, safeSearch, type:channel]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:playlist]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR60 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, regionCode, safeSearch, type, videoCaption:closedCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR98 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, maxResults, onBehalfOfContentOwner, order, pageToken, relevanceLanguage, safeSearch, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR271 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forMine, channelId, channelType, eventType, location, locationRadius, maxResults, relevanceLanguage, safeSearch, topicId, type, videoCaption:none, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR114 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR195 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType:upcoming, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR265 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType:upcoming, maxResults, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR248 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forContentOwner, channelType, eventType:live, location, locationRadius, maxResults, onBehalfOfContentOwner, publishedAfter, q, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR151 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, location, locationRadius, maxResults, order, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoDefinition, videoDimension, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, videoDuration:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR132 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, order, pageToken, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR2 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, onBehalfOfContentOwner, regionCode, safeSearch, type, videoDuration]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, maxResults:5, videoCaption:any, videoLicense:any, videoType:any]
+and a follow-up test case is constructed by adding the following parameters [channelType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR131 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType:upcoming, location, locationRadius, order, pageToken, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR165 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, location, locationRadius, maxResults, onBehalfOfContentOwner, order, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoEmbeddable, videoLicense:youtube, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:creativeCommon]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR250 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelType, eventType:live, location, locationRadius, maxResults, order, publishedBefore, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR256 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, location, locationRadius, maxResults, order, pageToken, regionCode, safeSearch, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR259 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, order, publishedAfter, q, regionCode, relevanceLanguage, safeSearch, topicId, type, videoDefinition, videoDimension, videoDuration:long, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:medium]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR99 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption:none, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:closedCaption]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR118 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, location, locationRadius, maxResults, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type:playlist]
+and a follow-up test case is constructed by changing the value of the following parameters [type:video]
+and a follow-up test case is constructed by changing the value of the following parameters [type:channel]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR199 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, forDeveloper:false, videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR72 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, q, regionCode, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, order:relevance]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR125 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoDefinition:any, videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR146 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, location, locationRadius, maxResults, order, publishedBefore, publishedAfter, regionCode, type, videoCaption, videoDefinition, videoDimension:2d, videoEmbeddable, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:3d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR269 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR105 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by adding the following parameters [videoType:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR121 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, regionCode, safeSearch, type, videoCaption:closedCaption, videoCategoryId, videoDimension, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoCaption:none]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR85 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, order, pageToken, safeSearch, type, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense:creativeCommon, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoLicense:youtube]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR94 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, onBehalfOfContentOwner, order, q, relevanceLanguage, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoType]
+and a follow-up test case is constructed by adding the following parameters [maxResults:5]
+and a follow-up test case is constructed by adding the following parameters [forDeveloper:false, safeSearch:moderate, videoEmbeddable:any, videoSyndicated:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR228 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType:upcoming, location, locationRadius, onBehalfOfContentOwner, order, pageToken, regionCode, relevanceLanguage, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:completed]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR122 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelType, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, pageToken, publishedAfter, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDimension:3d, videoDuration, videoLicense, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDimension:2d]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR113 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, channelId, channelType, eventType, maxResults, pageToken, q, regionCode, relevanceLanguage, safeSearch, type, videoCaption, videoCategoryId, videoDuration:short, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by changing the value of the following parameters [videoDuration:long]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR103 (DISJOINT_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, channelId, channelType, eventType:completed, location, locationRadius, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, regionCode, safeSearch, topicId, type, videoCaption, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:live]
+and a follow-up test case is constructed by changing the value of the following parameters [eventType:upcoming]
+then the source and the follow-up output(s) should be disjoint.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR197 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, order, publishedBefore, publishedAfter, q, safeSearch, type, videoDefinition, videoDimension, videoDuration, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [videoEmbeddable:any]
+then the source and the follow-up output(s) should have the same items in the same order.
+
+In the domain of YouTube (search)
+the following metamorphic relation should hold
+MR66 (EQUIVALENCE_EXTEND):
+if a source test case is run with the inputs [part, forDeveloper, eventType, location, locationRadius, maxResults, onBehalfOfContentOwner, pageToken, regionCode, safeSearch, type, videoCaption, videoCategoryId, videoDefinition, videoDimension, videoDuration, videoEmbeddable, videoLicense, videoSyndicated, videoType]
+and a follow-up test case is constructed by adding the following parameters [channelType:any, order:relevance]
+then the source and the follow-up output(s) should have the same items in the same order.
+
