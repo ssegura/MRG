@@ -1,6 +1,8 @@
 # MRG (Metamorphic Relation Generator)
 Specification-Driven Automated Identification of Metamorphic Relations for Query-Based Systems.
 
+**NOTE**: To replicate the results of the paper entitled "**Automated Generation of Metamorphic Relations for Query-Based Systems**", download the release [MET22](https://github.com/ssegura/MRG/releases/tag/MET22) and follow the instructions.
+
 A **query-based system (QBS)** is a software system that supports searching and displaying data based on user queries. Typical examples of QBSs are information systems like OpenERP (supporting queries like "retrieve invoices issued before 2022"), e-commerce sites like eBay (e.g., "search for microphones under $100"), software project platforms like GitHub (e.g., "get Node.js projects with less than 10 committers"), video streaming apps like Netflix (e.g., "order series by popularity"), email clients like Gmail (e.g., "display messages including the word _conference_ in the subject"),  or even video games like World of Warcraft (e.g., "get progression data for character _Thrall_ in _Blackrock_ realm").
 
 Testing QBSs is extremely challenging as they suffer from the oracle problem: it is very difficult, often infeasible, to assess whether the output of a query is correct, either because the expected output is unknown or because it is hard to compare it to the observed output. Metamorphic testing (MT) alleviates the oracle problem by considering the relations among the input and output of two or more executions of the program under test, known as _metamorphic relations_ (MRs).
